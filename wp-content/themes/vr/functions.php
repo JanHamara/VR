@@ -9,6 +9,7 @@ function my_theme_enqueue_scripts() {
 }
 ?>
 
+
 <!-- Icons from FontAwesome may be useful for showing content more visually for people with dyslexia -->
 <?php
 /** --------------------------------------- */
@@ -23,17 +24,6 @@ function enqueue_load_fa() {
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 ?>
 
-<?php
-///** ----------------------------------------- */
-///**                                          */
-///**  Setup theme & add customisable fields  */
-///**                                        */
-///** ------------------------------------- */
-//function esthetique_wp_setup() {
-//    add_theme_support( 'title-tag' );
-//}
-//add_action( 'after_setup_theme', 'vr_wp_setup' );
-//?>
 
 <!--    Fix Template Caching - Bug Fix for Wordpress 4.9+    -->
 <?php
