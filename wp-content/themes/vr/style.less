@@ -23,7 +23,7 @@ Text Domain: VR
 @min: 0%;
 @max: 100%;
 @font: 'Dosis', sans-serif;
-@main-font-color: black;
+@main-font-color: white;
 
 //--------------------------
 // Media Queries for different viewports
@@ -101,7 +101,7 @@ Text Domain: VR
 
 // ------------------------------------------------------------------------------
 
-body, html, div, span, p, a, img, header, footer, span, section, nav, aside, article, figure, figcaption, h1, h2, h3, h4, h5, h6, i {
+body, html, div, span, p, a, img, header, footer, span, section, nav, aside, article, figure, figcaption, ul, li, h1, h2, h3, h4, h5, h6, i {
   .display;
   .nobound;
   //outline: red 1px solid;
@@ -161,5 +161,57 @@ a {
 // ------------------------------------------------------------------------------
 
 body {
+  background: ghostwhite;
+  color: @main-font-color;
+  padding: 5% 10%;
 
+  // Main sites content is nested in <main> element
+  #vr-main {
+    .display(none);
+  }
+
+  #vr-site-logo {
+    width: 30%;
+    margin-bottom: 10%;
+  }
+
+  nav#vr-navbar {
+    .display(none);
+    .nobound;
+    width: @max;
+    height: 4em;
+
+    .container-fluid {
+      .nobound;
+      .fs;
+
+      .row {
+        .nobound;
+        .fs;
+
+        #vr-navbar-list {
+          .fs;
+          .aligntext;
+          .display(flex);
+
+          a {
+            flex: 1;
+            height: 100%;
+            line-height: 4em;
+            margin: 0 1em;
+            //
+            background: #0c5460;
+            box-shadow: 5px 5px 15px black;
+
+            li.vr-navbar-list-item {
+              .fs;
+              //
+              list-style-image: none;
+              border: 1px @main-font-color solid;
+            }
+          }
+        }
+      }
+    }
+  }
 }

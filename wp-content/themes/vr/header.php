@@ -28,3 +28,6 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+    <!--    This links to page-navigation template, which contains the navigation bar   -->
+    <?php get_template_part( 'template-parts/header/page', 'navigation' ); ?>

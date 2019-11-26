@@ -9,8 +9,10 @@
 
 <?php get_header(); ?>
 
-    <main>
-        Hello, this is me.
+    <main id="vr-main">
+        <header id="vr-header">
+            <?php get_template_part( 'template-parts/header/page', 'header' ); ?>
+        </header>
     </main>
 
 <?php get_footer(); ?>
