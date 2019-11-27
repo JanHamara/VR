@@ -23,7 +23,12 @@ Text Domain: VR
 @min: 0%;
 @max: 100%;
 @font: 'Dosis', sans-serif;
+@white: ghostwhite;
 @main-font-color: rgb(16,19,80);
+@secondary-font-color: rgb(16, 40, 100);
+@vr-green: rgb(42,163,172);
+@vr-orange: rgb(254,180,80);
+@vr-violet: rgb(79,41,114);
 
 //--------------------------
 // Media Queries for different viewports
@@ -142,15 +147,18 @@ a {
     // I setup links style by default as a normal color, so that I can format them later as I need
     color: @main-font-color !important;
     text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: box-shadow 1s;
   }
 
   &:active {
-    font-weight: 300 !important;
+    font-weight: 600 !important;
   }
 
   &:hover {
     text-decoration: none !important;
     font-weight: 600 !important;
+    transition: box-shadow 0.5s;
   }
 }
 
@@ -175,19 +183,48 @@ body.home.blog.logged-in {
     .nobound;
     .fs;
     height: 5em;
+    //
+    .rel;
 
     #vr-site-logo {
       .display(inline);
 
       img {
+        .display(inline-block);
         height: 100%;
         width: auto;
       }
     }
 
-    #vr-accessibility-menu-button {
-      i.fa-universal-access {
-        color: @main-font-color !important;
+    #vr-accessibility-menu-link {
+      .display(inline-block);
+      float: right;
+      //
+      padding: 1%;
+      border: 2px @main-font-color solid;
+      border-radius: 1em;
+      //
+      .abs;
+      top: 50%;
+      right: -5%;
+      transform: translate(-50%, -50%);
+
+      &:hover {
+        color: @white !important;
+        background: @main-font-color;
+        box-shadow: 0 0 15px gray;
+
+        #vr-accessibility-menu-button {
+          i.fa-universal-access {
+            color: @white;
+          }
+        }
+      }
+
+      #vr-accessibility-menu-button {
+        i.fa-universal-access {
+          color: @main-font-color;
+        }
       }
     }
   }

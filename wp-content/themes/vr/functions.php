@@ -19,7 +19,7 @@ function my_theme_enqueue_scripts() {
 /** ----------------------------------- */
 /* require_once ( trailingslashit(get_template_directory()) . 'inc/customize.php' ); */
 function enqueue_load_fa() {
-    wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'load-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 ?>

@@ -14,6 +14,9 @@
     </a>
 
     <!--    Accessibility Button - acts as button to open accessibility settings    -->
-    <div id="vr-accessibility-menu-button">
-        <i aria-hidden="true" class="fas fa-universal-access" title="Accessibility icon on accessibility menu button"></i>
-    </div>
+    <a id="vr-accessibility-menu-link" href="#accesibility">
+        <div aria-label="Open the accessibility settings menu" id="vr-accessibility-menu-button">
+            <i aria-hidden="true" class="fa fa-universal-access" title="Accessibility icon on accessibility menu button"></i>
+            &nbsp;Accessibility
+        </div>
+    </a>
