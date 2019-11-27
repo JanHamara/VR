@@ -402,7 +402,7 @@ body.home.blog.logged-in {
 
     #vr-header {
       width: 95%;
-      margin: 0 auto 8%;
+      margin: 0 auto 5%;
       height: 400px;
       background-image: url("images/header-bg.jpg");
       .bg-setup;
@@ -411,6 +411,7 @@ body.home.blog.logged-in {
       .box-shadow;
       .border-radius;
       padding: 4%;
+      margin-bottom: 8%;
 
       h1 {
         text-transform: capitalize;
@@ -456,8 +457,9 @@ body.home.blog.logged-in {
       .fs;
       width: 95%;
       height: auto;
-      margin: auto;
-      margin-bottom: 3%;
+      margin: 0 auto 4%;
+      //
+      padding-top: 3%;
 
       .container-fluid {
         .fs;
@@ -470,7 +472,7 @@ body.home.blog.logged-in {
           }
 
           .vr-main-menu-item {
-            height: 15em;
+            height: 16em;
             .rel;
 
             a {
@@ -493,6 +495,10 @@ body.home.blog.logged-in {
 
                 &:hover {
                   .box-shadow-hover;
+
+                  .vr-mm-item-content {
+                    background: @white;
+                  }
                 }
 
                 .vr-mm-item-content {
@@ -504,11 +510,7 @@ body.home.blog.logged-in {
                   background: @white-op;
                   color: @main-font-color;
                   border-radius: 0 0 1em 1em;
-                  padding: 6%;
-
-                  &:hover {
-                    background: @white;
-                  }
+                  padding: 8%;
 
                   h3 {
                     font-size: 120%;
@@ -517,15 +519,19 @@ body.home.blog.logged-in {
 
                   h4 {
                     font-size: 100%;
-                    padding-left: 9%;
                     margin-top: 3%;
-                    line-height: 170%;
+                    margin-left: 11%;
+                    line-height: 150%;
                     word-spacing: 0.1em;
 
                     span {
                       .display(inline);
                       font-weight: 600 !important;
                     }
+                  }
+
+                  .indent-1 {
+                    margin-left: 12.5% !important;
                   }
 
                   .text-to-speech-icon {

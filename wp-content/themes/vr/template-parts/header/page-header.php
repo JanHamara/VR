@@ -30,7 +30,7 @@
 
     <a id="header-button-link" href="#vr-main-menu">
         <div aria-label="Go to the main menu" id="header-button">
-            <i aria-hidden="true" class="fa fa-arrow-circle-down" title="Arrow pointing down to the main menu"></i>
+            <i aria-hidden="true" class="far fa-arrow-alt-circle-down" title="Arrow pointing down to the main menu"></i>
             &nbsp;Go to Menu
         </div>
     </a>

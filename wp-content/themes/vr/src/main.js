@@ -5,7 +5,8 @@ require('./bootstrap.min');
 require('../css/bootstrap-theme.min.css');
 require('../css/bootstrap.min.css');
 require('../style.less');
-require('../node_modules/fontawesome/index');
+require('../css/all.css');
+require('./all');
 
 var accessibilityMenuOn = false;
 
