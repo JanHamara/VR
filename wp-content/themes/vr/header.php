@@ -29,5 +29,9 @@
 
 <body <?php body_class(); ?>>
 
+    <div id="vr-accessibility-bar">
+        <?php get_template_part( 'template-parts/header/page', 'accessibility-bar' ); ?>
+    </div>
+
     <!--    This links to page-navigation template, which contains the navigation bar   -->
     <?php get_template_part( 'template-parts/header/page', 'navigation' ); ?>

@@ -23,7 +23,7 @@ Text Domain: VR
 @min: 0%;
 @max: 100%;
 @font: 'Dosis', sans-serif;
-@main-font-color: white;
+@main-font-color: rgb(16,19,80);
 
 //--------------------------
 // Media Queries for different viewports
@@ -128,7 +128,7 @@ html, body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  overflow-y: scroll;
+  //overflow-y: scroll;
 }
 
 //  Bootstrap Edit Config
@@ -160,20 +160,43 @@ a {
 
 // ------------------------------------------------------------------------------
 
-body {
+body.home.blog.logged-in {
   background: ghostwhite;
   color: @main-font-color;
-  padding: 5% 10%;
+  padding: 2%;
 
-  // Main sites content is nested in <main> element
-  #vr-main {
-    .display(none);
+  // -------------------------
+  //
+  //      Accessibility Bar
+  //
+  // -------------------------
+
+  #vr-accessibility-bar {
+    .nobound;
+    .fs;
+    height: 5em;
+
+    #vr-site-logo {
+      .display(inline);
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    #vr-accessibility-menu-button {
+      i.fa-universal-access {
+        color: @main-font-color !important;
+      }
+    }
   }
 
-  #vr-site-logo {
-    width: 30%;
-    margin-bottom: 10%;
-  }
+  // -------------------------
+  //
+  //      Navigation Bar
+  //
+  // -------------------------
 
   nav#vr-navbar {
     .display(none);
@@ -213,5 +236,15 @@ body {
         }
       }
     }
+  }
+
+  // -------------------------
+  //
+  //      Main Content
+  //
+  // -------------------------
+
+  #vr-main {
+    .display(none);
   }
 }

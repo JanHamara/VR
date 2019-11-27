@@ -7,8 +7,6 @@
 */
 ?>
 
-<img id="vr-site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" class="img-responsive" alt="site-logo">
-
 <nav id="vr-navbar">
     <div class="container-fluid">
         <div class="row">

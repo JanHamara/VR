@@ -1,33 +1,31 @@
-<!-- functions.php -->
-
-<!-- This piece of PHP links my bundled stylesheets and scripts to the Wordpress theme -->
-<!-- jQuery comes pre-installed with Wordpress, I just need to make a call for it and join it with the bundle -->
+<?php
+/* functions.php */
+/* This piece of PHP links my bundled stylesheets and scripts to the Wordpress theme */
+/* jQuery comes pre-installed with Wordpress, I just need to make a call for it and join it with the bundle */
+?>
 <?php
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_scripts' );
 function my_theme_enqueue_scripts() {
     wp_enqueue_script( 'bundle', get_stylesheet_directory_uri() . '/dist/bundle.js', array('jquery'), 1, false );
 }
 ?>
-
-
-<!-- Icons from FontAwesome may be useful for showing content more visually for people with dyslexia -->
 <?php
 /** --------------------------------------- */
 /** Import all dependencies for front end  */
-/**                                       */
+/** ------------------------------------- */
+/** Icons from FontAwesome may be useful for showing content more visually for people with dyslexia */
+/** ------------------------------------- */
 /**   Bootstrap / jQuery / FontAwesome   */
 /** ----------------------------------- */
-//require_once ( trailingslashit(get_template_directory()) . 'inc/customize.php' );
+/* require_once ( trailingslashit(get_template_directory()) . 'inc/customize.php' ); */
 function enqueue_load_fa() {
     wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 ?>
-
-
-<!--    Fix Template Caching - Bug Fix for Wordpress 4.9+    -->
 <?php
 /**
+ * Fix Template Caching - Bug Fix for Wordpress 4.9+
  * Plugin name: WP Trac #42573: Fix for theme template file caching.
  * Description: Flush the theme file cache each time the admin screens are loaded which uses the file list.
  * Plugin URI: https://core.trac.wordpress.org/ticket/42573
