@@ -22,7 +22,7 @@ Text Domain: VR
 
 @min: 0%;
 @max: 100%;
-@font: 'Dosis', sans-serif;
+@font: myriad-pro, sans-serif;
 @white: ghostwhite;
 @main-font-color: rgb(16,19,80);
 @secondary-font-color: rgb(16, 40, 100);
@@ -90,7 +90,7 @@ Text Domain: VR
 }
 
 .bg-setup {
-  background-position:  center;
+  background-position:  top;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -98,6 +98,54 @@ Text Domain: VR
   -o-background-size: cover;
   -webkit-background-size: cover;
   -ms-content-zooming: none;
+}
+
+//------------------------------------------------------------------------------
+
+// Project Classes
+
+// ------------------------------------------------------------------------------
+
+.box-shadow {
+  box-shadow: 0 0 15px gray;
+}
+
+.border-radius {
+  border-radius: 1em;
+}
+
+.main-border {
+  border: 2px @main-font-color solid;
+}
+
+.default-style {
+  color: @main-font-color !important;
+  background: @white !important;
+}
+
+.reverse-style {
+  color: @white !important;
+  background: @main-font-color !important;
+}
+
+.vr-key {
+  .display(inline);
+  background: @white;
+  color: @main-font-color;
+  //
+  padding: 0.5% 0%;
+  .border-radius;
+
+  &:before, &:after {
+    content: "\00a0\00a0\00a0";
+  }
+}
+
+.vr-key-reverse {
+  .vr-key;
+  //
+  background: @white;
+  color: @main-font-color;
 }
 
 //------------------------------------------------------------------------------
@@ -119,18 +167,17 @@ body, html, div, span, p, a, img, header, footer, span, section, nav, aside, art
 
 html, body {
   .fs;
-  //background-image: url('./images/bg.jpeg');
   .bg-setup;
   color: @main-font-color;
   // Basic setup for font resizing and transformation
   font-family: @font;
   font-size: @max;
   speak: none;
+  font-weight: 400;
   font-style: normal;
-  font-weight: 100;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  line-height: 150% !important;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   //overflow-y: scroll;
@@ -153,12 +200,17 @@ a {
 
   &:active {
     font-weight: 600 !important;
+    outline: none !important;
   }
 
   &:hover {
     text-decoration: none !important;
     font-weight: 600 !important;
     transition: box-shadow 0.5s;
+  }
+
+  &:focus {
+    outline: @vr-orange 2px solid;
   }
 }
 
@@ -172,6 +224,8 @@ body.home.blog.logged-in {
   background: ghostwhite;
   color: @main-font-color;
   padding: 2%;
+  //
+  .rel;
 
   // -------------------------
   //
@@ -185,6 +239,7 @@ body.home.blog.logged-in {
     height: 5em;
     //
     .rel;
+    margin-bottom: 5%;
 
     #vr-site-logo {
       .display(inline);
@@ -201,18 +256,18 @@ body.home.blog.logged-in {
       float: right;
       //
       padding: 1%;
-      border: 2px @main-font-color solid;
-      border-radius: 1em;
+      .main-border;
+      .border-radius;
       //
       .abs;
       top: 50%;
       right: -5%;
       transform: translate(-50%, -50%);
 
-      &:hover {
+      &:hover, &:focus {
         color: @white !important;
         background: @main-font-color;
-        box-shadow: 0 0 15px gray;
+        .box-shadow;
 
         #vr-accessibility-menu-button {
           i.fa-universal-access {
@@ -226,6 +281,43 @@ body.home.blog.logged-in {
           color: @main-font-color;
         }
       }
+    }
+  }
+
+  // -------------------------
+  //
+  //      Accessibility Menu [Modal]
+  //
+  // -------------------------
+
+  #vr-accessibility-menu {
+    .display(none);
+    .p-center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    //
+    width: 70%;
+    height: auto;
+    padding: 4%;
+    font-weight: 200;
+    //
+    .reverse-style;
+    .box-shadow;
+    .border-radius;
+    //
+    z-index: 9999 !important;
+
+    h4 {
+      .display(inline);
+    }
+
+    #vr-accessibility-menu-close {
+      float: right;
+      font-size: 80%;
+    }
+
+    #vr-accessibility-menu-options {
+
     }
   }
 
@@ -282,6 +374,52 @@ body.home.blog.logged-in {
   // -------------------------
 
   #vr-main {
-    .display(none);
+    .fs;
+    height: auto;
+
+    // -------------------------
+    //
+    //      Page Header
+    //
+    // -------------------------
+
+    #vr-header {
+      width: 95%;
+      margin: auto;
+      height: 400px;
+      background-image: url("images/bg2.jpg");
+      .bg-setup;
+      //
+      filter: grayscale(20%);
+      .box-shadow;
+      .border-radius;
+      padding: 4%;
+
+      h1 {
+        text-transform: capitalize;
+        font-weight: 800;
+        margin-bottom: 2%;
+        word-spacing: 0.1em;
+      }
+
+      h2 {
+        font-size: 100%;
+        line-height: 170% !important;
+        word-spacing: 0.1em;
+      }
+
+      #header-button-link {
+        .abs;
+        bottom: 10%;
+        //
+        padding: 1%;
+        color: @white !important;
+        background: @main-font-color;
+        font-weight: 400 !important;
+        .main-border;
+        .border-radius;
+        .box-shadow;
+      }
+    }
   }
 }

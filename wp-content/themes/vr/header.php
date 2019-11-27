@@ -23,6 +23,7 @@
     <![endif]-->
 
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/bio8ehc.css">
 
     <?php wp_head(); ?>
 </head>
@@ -31,6 +32,10 @@
 
     <div id="vr-accessibility-bar">
         <?php get_template_part( 'template-parts/header/page', 'accessibility-bar' ); ?>
+    </div>
+
+    <div id="vr-accessibility-menu">
+        <?php get_template_part( 'template-parts/header/page', 'accessibility-menu' ); ?>
     </div>
 
     <!--    This links to page-navigation template, which contains the navigation bar   -->
