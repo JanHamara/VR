@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4 vr-main-menu-item">
-                        <a href="#WhatIsVR">
+                        <a href="<?php echo site_url( '/what-is-vr' ) ?>">
                             <div class="vr-mm-item vr-mm-1">
                                 <div class="vr-mm-item-content" aria-label="Overview of Virtual Reality">
                                     <!--    Main Heading    -->
