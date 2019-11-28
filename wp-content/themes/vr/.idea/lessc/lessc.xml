@@ -14,8 +14,9 @@
                   </CssDirectory>
                 </list>
               </option>
+              <option name="excludePattern" value="$PROJECT_DIR$/node_modules" />
               <option name="id" value="8" />
-              <option name="lessDirPath" value="$PROJECT_DIR$/" />
+              <option name="lessDirPath" value="$PROJECT_DIR$" />
               <option name="name" value="Less" />
             </LessProfile>
           </value>

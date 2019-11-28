@@ -4,9 +4,9 @@
 require('./bootstrap.min');
 require('../css/bootstrap-theme.min.css');
 require('../css/bootstrap.min.css');
-require('../style.less');
 require('../css/all.css');
 require('./all');
+require('../style.less');
 
 var accessibilityMenuOn = false;
 
