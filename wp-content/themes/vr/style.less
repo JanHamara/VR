@@ -124,7 +124,7 @@ Text Domain: VR
 }
 
 .box-shadow-2 {
-  box-shadow: 0 0 15px @main-font-color !important;
+  box-shadow: 0 0 20px #cccccc !important;
 }
 
 .box-shadow-hover {
@@ -185,11 +185,17 @@ Text Domain: VR
 
       .modal-header {
         .nobound;
+        height: 25em;
+        .bg-setup;
+        //
         border-radius: 1em 1em 0 0 !important;
       }
 
       .modal-body {
         background: @white !important;
+        border-radius: 0 0 1em 1em !important;
+        //
+        padding: 4%;
       }
     }
   }
@@ -616,16 +622,74 @@ body.home.blog.logged-in {
     // -------------------------
 
     #WhatIsVR {
-      .basic-modal-setup;
+       .basic-modal-setup;
+       .modal-header {
+         background-image: url("images/Main Menu/1.jpg")
+       }
+     }
 
-      .modal-dialog {
-        .modal-content {
-          .modal-header {
-            height: 20em;
-            background-image: url("images/Main Menu/1.jpg");
-            .bg-setup;
-          }
-        }
+    // -------------------------
+    //
+    //      #HistoryOfVR
+    //
+    // -------------------------
+
+    #HistoryOfVR {
+      .basic-modal-setup;
+      .modal-header {
+        background-image: url("images/Main Menu/2.jpg")
+      }
+    }
+
+    // -------------------------
+    //
+    //      #DevicesVR
+    //
+    // -------------------------
+
+    #DevicesVR {
+      .basic-modal-setup;
+      .modal-header {
+        background-image: url("images/Main Menu/3.jpg")
+      }
+    }
+
+    // -------------------------
+    //
+    //      #AppsVR
+    //
+    // -------------------------
+
+    #AppsVR {
+      .basic-modal-setup;
+      .modal-header {
+        background-image: url("images/Main Menu/4.jpg")
+      }
+    }
+
+    // -------------------------
+    //
+    //      #DonateVR
+    //
+    // -------------------------
+
+    #DonateVR {
+      .basic-modal-setup;
+      .modal-header {
+        background-image: url("images/Main Menu/5.jpg")
+      }
+    }
+
+    // -------------------------
+    //
+    //      #ContactVR
+    //
+    // -------------------------
+
+    #ContactVR {
+      .basic-modal-setup;
+      .modal-header {
+        background-image: url("images/Main Menu/6.jpg")
       }
     }
   }

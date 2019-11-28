@@ -18,10 +18,8 @@
             <?php get_template_part( 'template-parts/page/page', 'menu' ); ?>
         </section>
 
-        <!-- Modal 1 | What is VR -->
-        <div class="modal fade" id="WhatIsVR" tabindex="-1" role="dialog" aria-labelledby="WhatIsVRMenu" aria-hidden="true">
-            <?php get_template_part( 'template-parts/page/page', 'vr1' ); ?>
-        </div>
+        <!--    Main Menu Modals    -->
+        <?php get_template_part( 'template-parts/page/page', 'modals' ); ?>
     </main>
 
 <?php get_footer(); ?>

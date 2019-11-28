@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#HistoryOfVR">
+                <a href="#HistoryOfVR" data-toggle="modal" data-target="#HistoryOfVR">
                     <div class="vr-mm-item vr-mm-2">
                         <div class="vr-mm-item-content" aria-label="History of Virtual Reality">
                             <!--    Main Heading    -->
@@ -56,7 +56,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#DevicesVR">
+                <a href="#DevicesVR" data-toggle="modal" data-target="#DevicesVR">
                     <div class="vr-mm-item vr-mm-3">
                         <div class="vr-mm-item-content" aria-label="List of devices for Virtual Reality">
                             <!--    Main Heading    -->
@@ -81,7 +81,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#AppsVR">
+                <a href="#AppsVR" data-toggle="modal" data-target="#AppsVR">
                     <div class="vr-mm-item vr-mm-4">
                         <div class="vr-mm-item-content" aria-label="List of Applications">
                             <!--    Main Heading    -->
@@ -104,7 +104,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="https://gf.me/u/wxwfz5" target="_blank">
+                <a href="#DonateVR" data-toggle="modal" data-target="#DonateVR">
                     <div class="vr-mm-item vr-mm-5">
                         <div class="vr-mm-item-content" aria-label="Donation Option">
                             <!--    Main Heading    -->
@@ -127,7 +127,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#ContactVR">
+                <a href="#ContactVR" data-toggle="modal" data-target="#ContactVR">
                     <div class="vr-mm-item vr-mm-6">
                         <div class="vr-mm-item-content" aria-label="Contact Option">
                             <!--    Main Heading    -->
