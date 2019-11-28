@@ -5,6 +5,12 @@ function my_theme_enqueue_scripts() {
 }
 ?>
 <?php
+function enqueue_my_custom_styles() {
+    wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', false);
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_custom_styles', 15);
+?>
+<?php
 /**
  * Fix Template Caching - Bug Fix for Wordpress 4.9+
  * Plugin name: WP Trac #42573: Fix for theme template file caching.

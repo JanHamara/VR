@@ -120,19 +120,23 @@ Text Domain: VR
 // ------------------------------------------------------------------------------
 
 .box-shadow {
-  box-shadow: 0 0 15px gray;
+  box-shadow: 0 0 15px gray !important;
+}
+
+.box-shadow-2 {
+  box-shadow: 0 0 15px @main-font-color !important;
 }
 
 .box-shadow-hover {
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px black !important;
 }
 
 .border-radius {
-  border-radius: 1em;
+  border-radius: 1em !important;
 }
 
 .main-border {
-  border: 2px @main-font-color solid;
+  border: 2px @main-font-color solid !important;
 }
 
 .default-style {
@@ -163,6 +167,32 @@ Text Domain: VR
   //
   background: @white;
   color: @main-font-color;
+}
+
+//
+
+.basic-modal-setup {
+
+  .modal-dialog {
+    width: 91.5% !important;
+
+    .modal-content {
+      .nobound;
+      .box-shadow-2;
+      .border-radius;
+      background: none !important;
+      border: none !important;
+
+      .modal-header {
+        .nobound;
+        border-radius: 1em 1em 0 0 !important;
+      }
+
+      .modal-body {
+        background: @white !important;
+      }
+    }
+  }
 }
 
 //------------------------------------------------------------------------------
@@ -574,6 +604,26 @@ body.home.blog.logged-in {
                 background-image: url("images/Main Menu/6.jpg");
               }
             }
+          }
+        }
+      }
+    }
+
+    // -------------------------
+    //
+    //      #WhatIsVR
+    //
+    // -------------------------
+
+    #WhatIsVR {
+      .basic-modal-setup;
+
+      .modal-dialog {
+        .modal-content {
+          .modal-header {
+            height: 20em;
+            background-image: url("images/Main Menu/1.jpg");
+            .bg-setup;
           }
         }
       }
