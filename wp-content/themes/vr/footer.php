@@ -9,7 +9,5 @@
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/bundle.js"></script>
-
 </body>
 </html>
