@@ -189,13 +189,100 @@ Text Domain: VR
         .bg-setup;
         //
         border-radius: 1em 1em 0 0 !important;
+
+        .modal-close-notice {
+          float: right;
+          margin: 2%;
+          //
+          color: @white !important;
+          font-size: 70%;
+          opacity: 0.8;
+        }
       }
 
       .modal-body {
         background: @white !important;
         border-radius: 0 0 1em 1em !important;
+        height: auto !important;
         //
         padding: 4%;
+
+        h3 {
+          .display(inline-block);
+          margin-bottom: 2.5%;
+        }
+
+        .modal-switch {
+          .display(inline);
+          float: right;
+          margin-left: 2%;
+          //
+          font-size: 150%;
+
+          .text-to-speech-icon, .video-content-icon {
+            //
+            color: @vr-violet;
+
+            &:hover {
+              cursor: pointer;
+              color: @vr-green;
+            }
+          }
+        }
+
+        .vr-modal-content {
+          padding-top: 2.5%;
+
+          p {
+            margin-bottom: 2% !important;
+            word-spacing: 0.1em !important; // increased word spacing and..
+            line-height: 170%; // ..increased line-height for easier reading
+
+            a {
+              .display(inline);
+              color: @vr-violet !important;
+
+              &:hover {
+                text-decoration: underline !important;
+              }
+            }
+          }
+
+          .vr-img {
+            .display(inline-block);
+            float: right;
+            width: 300px;
+            margin-bottom: 2%;
+
+            img {
+              .border-radius;
+              .box-shadow;
+              margin-bottom: 3%;
+            }
+          }
+
+          .modal-close-parent {
+            .aligntext;
+
+            .modal-close-button {
+              .display(inline-block);
+              .aligntext;
+              margin: 1% auto 0;
+              //
+              padding: 1%;
+              color: @main-font-color !important;
+              background: @white;
+              border: 2px @main-font-color solid;
+              .border-radius;
+
+              &:hover {
+                color: @white !important;
+                background: @main-font-color;
+                .box-shadow;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -626,6 +713,18 @@ body.home.blog.logged-in {
        .modal-header {
          background-image: url("images/Main Menu/1.jpg")
        }
+
+      .modal-content {
+        #vr1-img1 {
+          float: right;
+          margin-left: 5%;
+        }
+
+        #vr1-img2 {
+          float: left;
+          margin-right: 5%;
+        }
+      }
      }
 
     // -------------------------
