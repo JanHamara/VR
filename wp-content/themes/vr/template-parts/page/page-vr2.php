@@ -27,7 +27,7 @@
             </a>
 
             <!--    Text-to-Speech Switch    -->
-            <a href="#" class="modal-switch" aria-label="Text-To-Speech Switch">
+            <a href="#speech" class="modal-switch" aria-label="Text-To-Speech Switch">
                 <i aria-hidden="true" class="fa fa-volume-up text-to-speech-icon" title="Text-to-Speech Icon"></i>
             </a>
 
@@ -49,6 +49,7 @@
                     wears a pair of goggles which transport him into a fictional world, which stimulates his senses and displays
                     digital recordings.
                 </p>
+
                 <p>
                     However, the first real developments of virtual reality technology started in 1830s, when Sir Charles Wheatstone used
                     his research to construct the stereoscope. In 1956, a cinematographer Morton Heilig created <a href="#vr2-img1" aria-label="Link to Image 1">Sensorama</a>, the first
@@ -128,6 +129,7 @@
                 </div>
 
                 <div class="clearfix"></div>
+            </div>
         </div>
     </div>
 </div>

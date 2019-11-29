@@ -12,7 +12,7 @@
         <?php get_template_part( 'template-parts/page/page', 'vr1' ); ?>
     </div>
 
-    <!-- Modal 2 | History Of VR -->
+    <!-- Modal 1 | History of VR -->
     <div class="modal fade" id="HistoryOfVR" tabindex="-1" role="dialog" aria-labelledby="HistoryOfVR" aria-hidden="true">
         <?php get_template_part( 'template-parts/page/page', 'vr2' ); ?>
     </div>
