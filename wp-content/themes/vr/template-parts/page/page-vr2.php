@@ -7,7 +7,7 @@
 */
 ?>
 
-<div id="top" class="modal-dialog" role="document">
+<div id="top2" class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
             <!--      Do not be afraid to give disabled users instructions      -->
@@ -39,24 +39,40 @@
                 <!--        Content is divided into small and concise paragraphs        -->
                 <!--        Use of active verbs, and use of ''we'' and ''you'' [as per Plain English Writing criteria ]        -->
                 <!--        We use simple vocabulary no difficult, technological expressions        -->
+
+                <!--       References         -->
+                <!--                https://virtualspeech.com/blog/history-of-vr                -->
+
                 <p>
-                    <strong>Virtual Reality</strong> is a form of technology, that uses special devices and programs
-                    to create a digital world, separate from our real world, that can make you feel like you are in a real environment.
+                    The origin of the concept of Virtual Reality is not totally clear. Some people consider it to come from
+                    Stanley Weinbaum's science fiction story <strong>Pygmalion's Spectacles</strong>. In this story, the main character
+                    wears a pair of goggles which transport him into a fictional world, which stimulates his senses and displays
+                    digital recordings.
                 </p>
                 <p>
-                    This digital world is presented to you on a <a href="#vr2-img1" aria-label="Link to Image 1">first headset</a> worn on your head, that could be described as special kind of glasses.
-                    This device shows you a digital environment around you in such a way, that makes your eyes and brain believe it is real world.
+                    However, the first real developments of virtual reality technology started in 1830s, when Sir Charles Wheatstone used
+                    his research to construct the stereoscope. In 1956, a cinematographer Morton Heilig created <a href="#vr2-img1" aria-label="Link to Image 1">Sensorama</a>, the first
+                    virtual reality machine. This machine was a large booth, where the user could sit on a vibrating chair and enjoy six short films on three dimensional screen.
+                    The machine also added other factors to stimulate other senses, such as smell, audio or effects like wind.
                 </p>
 
                 <div id="vr2-img1" class="vr-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/history.jpg" class="img-responsive" alt="Picture of the first Virtual Reality Headset">
-                    <span><strong>Image 1 | </strong>Historical Virtual Reality Headset</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/sensorama.jpg" class="img-responsive" alt="Picture of the first Virtual Reality Machine">
+                    <span><strong>Image 1 | </strong>Sensorama - The First VR Machine</span>
                 </div>
 
                 <p>
-                    This device can work in some cases only by itself, or connected to a computer.
-                    In addition to the head device, you can also use two <a href="#vr2-img2" aria-label="Link to Image 2">controllers</a> that are held in your hands.
-                    These controllers can record movement of your hands and use this to reproduce movement of your hands inside the virtual world.
+                    Then later in 1965, a computer scientist Ivan Sutherland, created a head mounted device that was said to <q>replicate reality so well that the user would not be able to differentiate from actual reality</q>.
+                    It was called <a href="#vr2-img2" aria-label="Link to Image 2">Ultimate Display</a> and it allowed user to interact with objects in virtual reality. His work on this device is widely considered as one of the most important
+                    steps in virtual reality technology development.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 
                 <p>
@@ -72,8 +88,8 @@
                 </p>
 
                 <div id="vr2-img2" class="vr-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/sensorama.jpg" class="img-responsive" alt="Picture of first Virtual Reality device called Sensorama">
-                    <span><strong>Image 2 | </strong>Sensorama - The First Virtual Reality Machine</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/history.jpg" class="img-responsive" alt="Picture of first Virtual Reality Headset">
+                    <span><strong>Image 2 | </strong>Historical Virtual Reality Headset</span>
                 </div>
 
                 <p>
@@ -81,10 +97,14 @@
                 </p>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
 
-                <br/><br/>
+                <br/>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -99,7 +119,7 @@
                 </p>
 
                 <div class="modal-close-parent">
-                    <a href="#top" class="modal-close-button">
+                    <a href="#top2" class="modal-close-button">
                         <div aria-label="Go back to the top of the window">
                             <i aria-hidden="true" class="far fa-arrow-alt-circle-up" title="Arrow pointing up"></i>
                             &nbsp;Return to Top
