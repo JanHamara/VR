@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#WhatIsVR" data-toggle="modal" data-target="#WhatIsVR">
+                <a href="#WhatIsVR" id="Link01" data-toggle="modal" data-target="#WhatIsVR">
                     <div class="vr-mm-item vr-mm-1">
                         <div class="vr-mm-item-content" aria-label="Overview of Virtual Reality">
                             <!--    Main Heading    -->
@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#HistoryOfVR" data-toggle="modal" data-target="#HistoryOfVR">
+                <a href="#HistoryOfVR" id="Link02" data-toggle="modal" data-target="#HistoryOfVR">
                     <div class="vr-mm-item vr-mm-2">
                         <div class="vr-mm-item-content" aria-label="History of Virtual Reality">
                             <!--    Main Heading    -->
@@ -56,7 +56,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#DevicesVR" data-toggle="modal" data-target="#DevicesVR">
+                <a href="#DevicesVR" id="Link03" data-toggle="modal" data-target="#DevicesVR">
                     <div class="vr-mm-item vr-mm-3">
                         <div class="vr-mm-item-content" aria-label="List of devices for Virtual Reality">
                             <!--    Main Heading    -->
@@ -81,7 +81,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#AppsVR" data-toggle="modal" data-target="#AppsVR">
+                <a href="#AppsVR" id="Link04" data-toggle="modal" data-target="#AppsVR">
                     <div class="vr-mm-item vr-mm-4">
                         <div class="vr-mm-item-content" aria-label="List of Applications">
                             <!--    Main Heading    -->
@@ -104,7 +104,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#DonateVR" data-toggle="modal" data-target="#DonateVR">
+                <a href="#DonateVR" id="Link05" data-toggle="modal" data-target="#DonateVR">
                     <div class="vr-mm-item vr-mm-5">
                         <div class="vr-mm-item-content" aria-label="Donation Option">
                             <!--    Main Heading    -->
@@ -127,7 +127,7 @@
                 </a>
             </div>
             <div class="col-lg-4 vr-main-menu-item">
-                <a href="#ContactVR" data-toggle="modal" data-target="#ContactVR">
+                <a href="#ContactVR" id="Link06" data-toggle="modal" data-target="#ContactVR">
                     <div class="vr-mm-item vr-mm-6">
                         <div class="vr-mm-item-content" aria-label="Contact Option">
                             <!--    Main Heading    -->

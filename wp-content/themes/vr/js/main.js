@@ -9,6 +9,12 @@ require('./all');
 require('../style.less');
 
 var accessibilityMenuOn = false;
+var vrMenu1On = false;
+var vrMenu2On = false;
+var vrMenu3On = false;
+var vrMenu4On = false;
+var vrMenu5On = false;
+var vrMenu6On = false;
 
 jQuery( document ).ready(function() {
 
@@ -23,7 +29,43 @@ jQuery( document ).ready(function() {
         }
     });
 
-    // Function to close accessibility menu by clicking on ESC button when the menu is open
+    jQuery("#Link01").on('click', function() {
+        if (vrMenu1On === false) {
+            vrMenu1On = true;
+        }
+    });
+
+    jQuery("#Link02").on('click', function() {
+        if (vrMenu2On === false) {
+            vrMenu2On = true;
+        }
+    });
+
+    jQuery("#Link03").on('click', function() {
+        if (vrMenu3On === false) {
+            vrMenu3On = true;
+        }
+    });
+
+    jQuery("#Link04").on('click', function() {
+        if (vrMenu4On === false) {
+            vrMenu4On = true;
+        }
+    });
+
+    jQuery("#Link05").on('click', function() {
+        if (vrMenu5On === false) {
+            vrMenu5On = true;
+        }
+    });
+
+    jQuery("#Link06").on('click', function() {
+        if (vrMenu6On === false) {
+            vrMenu6On = true;
+        }
+    });
+
+    // Function to close any open menu by clicking on ESC button when the menu is open
     document.onkeydown = function (e) {
         let accessibilityMenu = jQuery("#vr-accessibility-menu");
 
@@ -33,7 +75,56 @@ jQuery( document ).ready(function() {
                 hideAccessibilityMenu(accessibilityMenu);
             }
         } else {
-            // do nothing if menu is closed
+            // do nothing
+        }
+
+        if (vrMenu1On === true) {
+            if (testEsc()) {
+                jQuery("#WhatIsVR").modal('hide');
+                vrMenu1On = false;
+            }
+        }
+
+        if (vrMenu2On === true) {
+            if (testEsc()) {
+                jQuery("#HistoryOfVR").modal('hide');
+                vrMenu2On = false;
+            }
+        }
+
+        if (vrMenu3On === true) {
+            if (testEsc()) {
+                jQuery("#DevicesVR").modal('hide');
+                vrMenu3On = false;
+            }
+        }
+
+        if (vrMenu4On === true) {
+            if (testEsc()) {
+                jQuery("#AppsVR").modal('hide');
+                vrMenu4On = false;
+            }
+        }
+
+        if (vrMenu5On === true) {
+            if (testEsc()) {
+                jQuery("#DonateVR").modal('hide');
+                vrMenu5On = false;
+            }
+        }
+
+        if (vrMenu6On === true) {
+            if (testEsc()) {
+                jQuery("#ContactVR").modal('hide');
+                vrMenu6On = false;
+            }
+        }
+
+        function testEsc() {
+            let keyCode = e.key;
+            if (keyCode === "Escape") {
+                return true;
+            }
         }
     };
 });
