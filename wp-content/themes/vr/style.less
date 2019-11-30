@@ -32,6 +32,7 @@ Text Domain: VR
 @vr-orange: rgb(254,180,80);
 @vr-violet: rgb(79,41,114);
 @vr-gray: rgb(52, 50, 62);
+@vr-error: #AA3333;
 
 //--------------------------
 // Media Queries for different viewports
@@ -197,6 +198,7 @@ Text Domain: VR
           //
           color: @white !important;
           font-size: 70%;
+          font-weight: 600 !important;
           opacity: 0.9;
         }
       }
@@ -799,7 +801,6 @@ body.home.blog.logged-in {
 
             .modal-close-notice {
               color: @main-font-color !important;
-              font-weight: 600 !important;
             }
           }
         }
@@ -814,8 +815,62 @@ body.home.blog.logged-in {
 
     #ContactVR {
       .basic-modal-setup;
+
       .modal-header {
         background-image: url("images/Main Menu/6.jpg")
+      }
+
+      #vr-contact-form {
+        .aligntext;
+
+        form {
+          margin: 4% 0;
+
+          .row:first-child {
+            margin-bottom: 1.5%;
+          }
+
+          .first-input {
+            padding-right: 1%;
+          }
+
+          input, textarea {
+            .aligntext(left);
+            padding: 4% !important;
+            color: @main-font-color;
+            background: none;
+            .border-radius;
+            .main-border;
+
+            &::placeholder {
+              color: @main-font-op !important;
+            }
+          }
+
+          textarea {
+            padding: 2% !important;
+          }
+        }
+
+        .errorMessage {
+          .aligntext(left);
+          color: @vr-error;
+          font-weight: 600 !important;
+          font-size: 80%;
+          margin-top: 1%;
+        }
+
+        .form-submitted {
+          .display(inline-block);
+          color: @vr-violet;
+          opacity: 0;
+          transform: scale(0.8);
+          transition: transform 1s, opacity 1s;
+          margin-top: 2%;
+          //
+          font-size: 70%;
+          font-weight: 600 !important;
+        }
       }
     }
   }
