@@ -64,6 +64,15 @@
                     </ul>
                 </div>
 
+                <div class="modal-close-parent">
+                    <a href="#" class="modal-close-button" target="_blank">
+                        <div aria-label="Load more items...">
+                            <i aria-hidden="true" class="fas fa-spinner" title="Load icon"></i>
+                            &nbsp;Load more items...
+                        </div>
+                    </a>
+                </div>
+
                 <div class="clearfix"></div>
             </div>
         </div>

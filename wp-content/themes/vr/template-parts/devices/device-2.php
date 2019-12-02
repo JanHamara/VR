@@ -38,13 +38,13 @@
             <!--     VR Headset Specifications     -->
             <div class="vr-device-specs">
                 <div class="vr-device-spec">
-                    Price: <span class="orange-mark">Quite Cheap</span>
+                    Price: <span class="green-mark">Cheap</span>
                 </div>
                 <div class="vr-device-spec right">
                     Remote Control: <span class="green-mark">Yes</span>
                 </div>
                 <div class="vr-device-spec">
-                    Image Quality: <span class="orange-mark">Quite Low</span>
+                    Image Quality: <span class="orange-mark">Medium</span>
                 </div>
                 <div class="vr-device-spec right">
                     Motion sensors: <span class="red-mark">No</span>
