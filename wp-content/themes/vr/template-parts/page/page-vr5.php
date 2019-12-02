@@ -62,15 +62,6 @@
                     However, even if I manage to reach a wider audience of disabled people with this website, VR equipment is currently still extremely expensive and thus I have decided to add a donation option to the website, <strong>where people who want to help the cause, could donate a voluntary amount of money towards VR equipment for disabled people</strong>.
                 </p>
 
-                <div class="modal-close-parent">
-                    <a href="https://gf.me/u/wxwfz5" class="modal-close-button" target="_blank">
-                        <div aria-label="Make a donation">
-                            <i aria-hidden="true" class="fas fa-coins" title="Donation icon"></i>
-                            &nbsp;Donate
-                        </div>
-                    </a>
-                </div>
-
                 <div class="clearfix"></div>
             </div>
         </div>

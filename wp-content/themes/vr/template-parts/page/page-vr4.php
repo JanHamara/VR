@@ -16,9 +16,9 @@
         <div class="modal-body">
             <!--    Main Heading    -->
             <h3>
-                <i aria-hidden="true" class="fas fa-coins" title="Donation icon"></i>
+                <i aria-hidden="true" class="far fa-play-circle" title="Application icon"></i>
                 &nbsp;
-                Make a donation
+                VR Applications
             </h3>
 
             <!--    Video Switch    -->
@@ -34,24 +34,6 @@
             <hr/>
 
             <div class="vr-modal-content">
-                <!--        Here, we are using plain English and simple sentences to explain VR technology to the user        -->
-                <!--        There is no complicated sentence structures        -->
-                <!--        Content is divided into small and concise paragraphs        -->
-                <!--        Use of active verbs, and use of ''we'' and ''you'' [as per Plain English Writing criteria ]        -->
-                <!--        We use simple vocabulary no difficult, technological expressions        -->
-
-                <p>
-                    Hello, please donate.
-                </p>
-
-                <div class="modal-close-parent">
-                    <a href="#top" class="modal-close-button">
-                        <div aria-label="Go back to the top of the window">
-                            <i aria-hidden="true" class="far fa-arrow-alt-circle-up" title="Arrow pointing up"></i>
-                            &nbsp;Return to Top
-                        </div>
-                    </a>
-                </div>
 
                 <div class="clearfix"></div>
             </div>
