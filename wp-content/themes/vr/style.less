@@ -298,21 +298,24 @@ Text Domain: VR
   padding-bottom: 2% !important;
 }
 
-.green-mark {
-  float: right;
+.mark {
   .display(inline) !important;
-  color: limegreen !important;
+  float: right;
+  font-weight: 600 !important;
+}
+
+.green-mark {
+  .mark;
+  color: darkgreen !important;
 }
 
 .orange-mark {
-  float: right;
-  .display(inline) !important;
+  .mark;
   color: darkorange !important;
 }
 
 .red-mark {
-  float: right;
-  .display(inline) !important;
+  .mark;
   color: @vr-error !important;
 }
 

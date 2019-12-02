@@ -10,27 +10,27 @@
 <div class="vr-devices-list-item">
     <div class="row">
         <div class="col-lg-6 col-first">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/devices/2.jpg" class="img-responsive" alt="VR Device Image">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/devices/4.jpg" class="img-responsive" alt="VR Device Image">
         </div>
         <div class="col-lg-6 col-second">
             <!--     VR Headset Name     -->
-            <h4 class="vr-device-name">Google DayDream
+            <h4 class="vr-device-name">HTC Vive Pro
                 <span class="h4-by"> by </span>
                 <!--     VR Headset Manufacturer     -->
-                <span class="h4-manufacturer">Google</span>
+                <span class="h4-manufacturer">Vive</span>
 
                 <!--    Video Switch    -->
-                <a href="https://www.youtube.com/watch?v=SxAj2lyX4oU" class="modal-switch item-switch" aria-label="Video Content Switch" target="_blank">
+                <a href="https://www.youtube.com/watch?v=HHM-8I3EfTE" class="modal-switch item-switch" aria-label="Video Content Switch" target="_blank">
                     <i aria-hidden="true" class="fa fa-video video-content-icon" title="Video Content Icon"></i>
                 </a>
             </h4>
 
             <!--     VR Headset Description     -->
-            <!--     Source: https://arvr.google.com/intl/en_uk/daydream/smartphonevr/     -->
             <p class="vr-device-desc">
-                Google DayDream is the more advanced virtual reality head-mounted headset by Google.
-                It allows you to enjoy virtual reality with soft and lightweight fabric headset, that is very comfortable to wear and
-                it also includes a handheld easy-to-use controller. It still requires a compatible smartphone to use, however.
+                HTC Vive Pro is a professional virtual reality system, that is considered to be the most immersive virtual reality
+                system on the market at the moment. It is very expensive and requires a powerful computer to run, but it offers a breathtaking image quality,
+                two controllers, one for each hand, and a truly realistic VR experience.
+
             </p>
 
             <hr/>
@@ -38,16 +38,16 @@
             <!--     VR Headset Specifications     -->
             <div class="vr-device-specs">
                 <div class="vr-device-spec">
-                    Price: <span class="orange-mark">Quite Cheap</span>
+                    Price: <span class="red-mark">Very expensive</span>
                 </div>
                 <div class="vr-device-spec right">
                     Remote Control: <span class="green-mark">Yes</span>
                 </div>
                 <div class="vr-device-spec">
-                    Image Quality: <span class="orange-mark">Quite Low</span>
+                    Image Quality: <span class="green-mark">Very High</span>
                 </div>
                 <div class="vr-device-spec right">
-                    Motion sensors: <span class="red-mark">No</span>
+                    Motion sensors: <span class="green-mark">Yes</span>
                 </div>
                 <div class="vr-device-spec">
                     Wearing Comfort: <span class="green-mark">High</span>
@@ -61,7 +61,7 @@
 
             <!--     Buy Headset Button     -->
             <div class="modal-close-parent">
-                <a href="https://arvr.google.com/intl/en_uk/daydream/smartphonevr/" class="modal-close-button vr-device-buy" target="_blank">
+                <a href="https://www.vive.com/uk/product/vive-pro/" class="modal-close-button vr-device-buy" target="_blank">
                     <div aria-label="Buy this headset">
                         <i aria-hidden="true" class="fas fa-coins" title="Buy icon"></i>
                         &nbsp;

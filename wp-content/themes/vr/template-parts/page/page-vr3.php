@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="modal-close-parent">
-                    <a href="#" class="modal-close-button" target="_blank">
+                    <a href="javascript:void(0)" class="modal-close-button" target="_blank">
                         <div aria-label="Load more items...">
                             <i aria-hidden="true" class="fas fa-spinner" title="Load icon"></i>
                             &nbsp;Load more items...
