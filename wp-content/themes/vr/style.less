@@ -892,6 +892,10 @@ body.home.blog.logged-in {
                 .box-shadow;
               }
             }
+
+            .vr-devices-last-item {
+              margin-bottom: 3% !important;
+            }
           }
         }
       }
@@ -907,6 +911,61 @@ body.home.blog.logged-in {
       .basic-modal-setup;
       .modal-header {
         background-image: url("images/Main Menu/4.jpg")
+      }
+
+      #vr-apps {
+        padding-top: 3%;
+
+        ul#vr-apps-list {
+          height: auto;
+
+          li {
+            //
+            // Apps List Item
+            //
+            .vr-apps-list-item {
+              .border-radius;
+              .box-shadow-2;
+              border: 0.5px #dddddd solid;
+              width: 100%;
+              height: 125px !important;
+              overflow: hidden;
+              //
+              margin-bottom: 3%;
+
+              .row {
+                .fs;
+                .nobound;
+
+                .col-lg-2 {
+                  height: auto;
+
+                  img {
+                    height: auto;
+                  }
+                }
+
+                .col-lg-10 {
+                  padding: 3%;
+
+                  h4 {
+                    font-weight: 600 !important;
+                    margin-bottom: 2%;
+                  }
+
+                  p {
+                    .display(inline-block);
+                  }
+                }
+              }
+
+              &:hover {
+                .box-shadow;
+                cursor: pointer;
+              }
+            }
+          }
+        }
       }
     }
 

@@ -34,9 +34,11 @@
             <hr/>
 
             <div class="vr-modal-content">
-                <p class="pb2">If you are interested in learning about various virtual reality devices,
+                <p class="pb2">
+                    If you are interested in learning about various virtual reality devices,
                     or if you want to compare their functionality <br/>and find out which one is the best for you,
-                    feel free to use this simple list of various virtual reality devices available on the market.</p>
+                    feel free to use this simple list of various virtual reality devices available on the market.
+                </p>
 
                 <hr/>
 
@@ -65,10 +67,11 @@
                 </div>
 
                 <div class="modal-close-parent">
-                    <a href="javascript:void(0)" class="modal-close-button" target="_blank">
+                    <a href="javascript:void(0)" class="modal-close-button">
                         <div aria-label="Load more items...">
                             <i aria-hidden="true" class="fas fa-spinner" title="Load icon"></i>
-                            &nbsp;Load more items...
+                            &nbsp;
+                            Load More. . .
                         </div>
                     </a>
                 </div>

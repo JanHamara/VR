@@ -7,7 +7,7 @@
 */
 ?>
 
-<div class="vr-devices-list-item">
+<div class="vr-devices-list-item vr-devices-last-item">
     <div class="row">
         <div class="col-lg-6 col-first">
             <img src="<?php echo get_template_directory_uri(); ?>/images/devices/4.jpg" class="img-responsive" alt="VR Device Image">
