@@ -20,6 +20,5 @@
 
         <!--    Main Menu Modals    -->
         <?php get_template_part( 'template-parts/page/page', 'modals' ); ?>
-    </main>
 
 <?php get_footer(); ?>

@@ -30,6 +30,8 @@
 
 <body <?php body_class(); ?>>
 
+    <div id="site-container">
+
     <div id="vr-accessibility-bar">
         <?php get_template_part( 'template-parts/header/page', 'accessibility-bar' ); ?>
     </div>

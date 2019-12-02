@@ -398,62 +398,672 @@ a {
 body.home.blog.logged-in {
   background: ghostwhite;
   color: @main-font-color;
-  padding: 2%;
   //
-  .rel;
 
-  // -------------------------
-  //
-  //      Accessibility Bar
-  //
-  // -------------------------
-
-  #vr-accessibility-bar {
+  #site-container {
     .nobound;
     .fs;
-    height: 5em;
-    //
     .rel;
-    margin-bottom: 5%;
+    //
+    padding: 2%;
 
-    #vr-site-logo {
-      .display(inline);
 
-      img {
-        .display(inline-block);
-        height: @max;
-        width: auto;
+    // -------------------------
+    //
+    //      Accessibility Bar
+    //
+    // -------------------------
+
+    #vr-accessibility-bar {
+      .nobound;
+      .fs;
+      height: 5em;
+      //
+      .rel;
+      margin-bottom: 5%;
+
+      #vr-site-logo {
+        .display(inline);
+
+        img {
+          .display(inline-block);
+          height: @max;
+          width: auto;
+        }
       }
-    }
 
-    #vr-accessibility-menu-link {
-      .display(inline-block);
-      float: right;
-      //
-      padding: 1%;
-      .main-border;
-      .border-radius;
-      //
-      .abs;
-      top: 50%;
-      right: -5%;
-      transform: translate(-50%, -50%);
+      #vr-accessibility-menu-link {
+        .display(inline-block);
+        float: right;
+        //
+        padding: 1%;
+        .main-border;
+        .border-radius;
+        //
+        .abs;
+        top: 50%;
+        right: -5%;
+        transform: translate(-50%, -50%);
 
-      &:hover, &:focus {
-        color: @white !important;
-        background: @main-font-color;
-        .box-shadow;
+        &:hover, &:focus {
+          color: @white !important;
+          background: @main-font-color;
+          .box-shadow;
+
+          #vr-accessibility-menu-button {
+            i.fa-universal-access {
+              color: @white;
+            }
+          }
+        }
 
         #vr-accessibility-menu-button {
           i.fa-universal-access {
-            color: @white;
+            color: @main-font-color;
+          }
+        }
+      }
+    }
+
+    // -------------------------
+    //
+    //      Accessibility Menu [Modal]
+    //
+    // -------------------------
+
+    #vr-accessibility-menu {
+      .display(none);
+      .p-center;
+      opacity: 0;
+      transition: opacity 0.5s;
+      //
+      width: 70%;
+      height: auto;
+      padding: 4%;
+      font-weight: 200;
+      //
+      .reverse-style;
+      .box-shadow;
+      .border-radius;
+      //
+      z-index: 9999 !important;
+
+      h4 {
+        .display(inline);
+      }
+
+      #vr-accessibility-menu-close {
+        float: right;
+        font-size: 80%;
+      }
+
+      #vr-accessibility-menu-options {
+
+      }
+    }
+
+    // -------------------------
+    //
+    //      Navigation Bar
+    //
+    // -------------------------
+
+    nav#vr-navbar {
+      .display(none);
+      .nobound;
+      width: @max;
+      height: 4em;
+
+      .container-fluid {
+        .nobound;
+        .fs;
+
+        .row {
+          .nobound;
+          .fs;
+
+          #vr-navbar-list {
+            .fs;
+            .aligntext;
+            .display(flex);
+
+            a {
+              flex: 1;
+              height: @max;
+              line-height: 4em;
+              margin: 0 1em;
+              //
+              background: #0c5460;
+              box-shadow: 5px 5px 15px black;
+
+              li.vr-navbar-list-item {
+                .fs;
+                //
+                list-style-image: none;
+                border: 1px @main-font-color solid;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // -------------------------
+    //
+    //      Main Content
+    //
+    // -------------------------
+
+    #vr-main {
+      .fs;
+      height: auto;
+
+      // -------------------------
+      //
+      //      Page Header
+      //
+      // -------------------------
+
+      #vr-header {
+        width: 95%;
+        margin: 0 auto 5%;
+        height: 400px;
+        background-image: url("images/header-bg.jpg");
+        .bg-setup;
+        //
+        filter: grayscale(20%);
+        .box-shadow;
+        .border-radius;
+        padding: 4%;
+        margin-bottom: 8%;
+
+        h1 {
+          text-transform: capitalize;
+          font-weight: 800;
+          margin-bottom: 2%;
+          word-spacing: 0.1em;
+          //
+          color: @main-font-color;
+        }
+
+        h2 {
+          font-size: @max;
+          line-height: 170% !important;
+          word-spacing: 0.1em;
+        }
+
+        #header-button-link {
+          .abs;
+          bottom: 10%;
+          //
+          padding: 1%;
+          color: @white !important;
+          background: @main-font-color;
+          border: 2px @main-font-color solid;
+          .border-radius;
+          .box-shadow;
+          opacity: 0.9;
+
+          &:hover {
+            opacity: 1;
           }
         }
       }
 
-      #vr-accessibility-menu-button {
-        i.fa-universal-access {
-          color: @main-font-color;
+      // -------------------------
+      //
+      //      Main Menu
+      //
+      // -------------------------
+
+      #vr-main-menu {
+        .nobound;
+        .fs;
+        width: 95%;
+        height: auto;
+        margin: 0 auto 4%;
+        //
+        padding-top: 3%;
+
+        .container-fluid {
+          .fs;
+
+          .row {
+            .fs;
+
+            &:first-child {
+              margin-bottom: 3%;
+            }
+
+            .vr-main-menu-item {
+              height: 16em;
+              .rel;
+
+              a {
+                width: 90%;
+                height: @max;
+                .p-center;
+
+                &:focus {
+                  outline: @vr-orange 2px solid !important;
+                  border: @vr-orange 2px solid !important;
+                }
+
+                .vr-mm-item {
+                  .fs;
+                  //
+                  filter: grayscale(20%);
+                  .box-shadow;
+                  .border-radius;
+                  .bg-setup-2;
+
+                  &:hover {
+                    .box-shadow-hover;
+
+                    .vr-mm-item-content {
+                      background: @white;
+                    }
+                  }
+
+                  .vr-mm-item-content {
+                    width: @max;
+                    height: 50%;
+                    .abs;
+                    bottom: 0;
+                    //
+                    background: @white-op;
+                    color: @main-font-color;
+                    border-radius: 0 0 1em 1em;
+                    padding: 8%;
+
+                    h3 {
+                      font-size: 120%;
+                      font-weight: 600 !important;
+                    }
+
+                    h4 {
+                      font-size: 100%;
+                      margin-top: 3%;
+                      margin-left: 11%;
+                      line-height: 150%;
+                      word-spacing: 0.1em;
+
+                      span {
+                        .display(inline);
+                        font-weight: 600 !important;
+                      }
+                    }
+
+                    .indent-1 {
+                      margin-left: 12.5% !important;
+                    }
+
+                    .text-to-speech-icon {
+                      .abs;
+                      right: 1%;
+                      bottom: 1%;
+                      transform: translate(-50%, -50%);
+                      //
+                      color: @vr-violet;
+
+                      &:hover {
+                        cursor: pointer;
+                        color: @vr-green;
+                      }
+                    }
+                  }
+                }
+
+                .vr-mm-1 {
+                  background-image: url("images/Main Menu/1.jpg");
+                }
+
+                .vr-mm-2 {
+                  background-image: url("images/Main Menu/2.jpg");
+                }
+
+                .vr-mm-3 {
+                  background-image: url("images/Main Menu/3.jpg");
+                }
+
+                .vr-mm-4 {
+                  background-image: url("images/Main Menu/4.jpg");
+                }
+
+                .vr-mm-5 {
+                  background-image: url("images/Main Menu/5.jpg");
+                }
+
+                .vr-mm-6 {
+                  background-image: url("images/Main Menu/6.jpg");
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // -------------------------
+      //
+      //      #WhatIsVR
+      //
+      // -------------------------
+
+      #WhatIsVR {
+        .basic-modal-setup;
+
+        .modal-header {
+          background-image: url("images/Main Menu/1.jpg")
+        }
+
+        .modal-content {
+          #vr1-img1 {
+            float: right;
+            margin-left: 5%;
+          }
+
+          #vr1-img2 {
+            float: left;
+            margin-right: 5%;
+          }
+        }
+      }
+
+      // -------------------------
+      //
+      //      #HistoryOfVR
+      //
+      // -------------------------
+
+      #HistoryOfVR {
+        .basic-modal-setup;
+
+        .modal-header {
+          background-image: url("images/Main Menu/2.jpg")
+        }
+
+        .modal-content {
+          #vr2-img1 {
+            float: right;
+            margin-left: 5%;
+          }
+
+          #vr2-img2 {
+            float: left;
+            margin-right: 5%;
+          }
+        }
+      }
+
+      // -------------------------
+      //
+      //      #DevicesVR
+      //
+      // -------------------------
+
+      #DevicesVR {
+        .basic-modal-setup;
+
+        .modal-header {
+          background-image: url("images/Main Menu/3.jpg")
+        }
+
+        #vr-devices {
+          padding-top: 3%;
+
+          ul#vr-devices-list {
+            height: auto;
+
+            li {
+              //
+              // Devices List Item
+              //
+              .vr-devices-list-item {
+                .border-radius;
+                .box-shadow-2;
+                border: 0.5px #dddddd solid;
+                width: 100%;
+                height: 494px !important;
+                overflow: hidden;
+                //
+                margin-bottom: 5%;
+
+                .row {
+                  .nobound;
+                  .fs;
+
+                  .col-first {
+                    padding: 0 !important;
+                    height: 100%;
+
+                    img {
+                      height: auto;
+                      width: auto;
+                    }
+                  }
+
+                  .col-second {
+                    padding: 3%;
+
+                    h4.vr-device-name {
+                      font-size: 180%;
+                      font-weight: 600 !important;
+                      color: @vr-violet !important;
+                      word-spacing: 0.1em !important;
+                      //
+                      margin-bottom: 4%;
+
+                      .h4-by {
+                        .display(inline);
+                        font-size: 60% !important;
+                        font-weight: 400 !important;
+                        color: @main-font-color !important;
+                      }
+
+                      .h4-manufacturer {
+                        .display(inline);
+                        font-size: 60% !important;
+                        color: @main-font-color !important;
+                      }
+
+                      .item-switch {
+                        font-size: 100%;
+                        transform: scale(0.8);
+                      }
+                    }
+
+                    div.vr-device-specs {
+                      margin-top: 4%;
+                      margin-bottom: 4%;
+
+                      .vr-device-spec {
+                        .display(inline-block);
+                        width: 40%;
+                        //
+                        margin-bottom: 2%;
+
+                        span {
+                          .display(inline) !important;
+                        }
+                      }
+                    }
+
+                    a.vr-device-buy {
+                      .display(inline-block);
+                      padding: 3%;
+                      float: left;
+                    }
+                  }
+                }
+
+                &:hover {
+                  .box-shadow;
+                }
+              }
+
+              .vr-devices-last-item {
+                margin-bottom: 3% !important;
+              }
+            }
+          }
+        }
+      }
+
+      // -------------------------
+      //
+      //      #AppsVR
+      //
+      // -------------------------
+
+      #AppsVR {
+        .basic-modal-setup;
+
+        .modal-header {
+          background-image: url("images/Main Menu/4.jpg")
+        }
+
+        #vr-apps {
+          padding-top: 3%;
+
+          ul#vr-apps-list {
+            height: auto;
+
+            li {
+              //
+              // Apps List Item
+              //
+              .vr-apps-list-item {
+                .border-radius;
+                .box-shadow-2;
+                border: 0.5px #dddddd solid;
+                width: 100%;
+                height: 125px !important;
+                overflow: hidden;
+                //
+                margin-bottom: 3%;
+
+                .row {
+                  .fs;
+                  .nobound;
+
+                  .col-lg-2 {
+                    height: auto;
+
+                    img {
+                      height: auto;
+                    }
+                  }
+
+                  .col-lg-10 {
+                    padding: 3%;
+
+                    h4 {
+                      font-weight: 600 !important;
+                      margin-bottom: 2%;
+                    }
+
+                    p {
+                      .display(inline-block);
+                    }
+                  }
+                }
+
+                &:hover {
+                  .box-shadow;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // -------------------------
+      //
+      //      #DonateVR
+      //
+      // -------------------------
+
+      #DonateVR {
+        .basic-modal-setup;
+
+        .modal-dialog {
+          .modal-content {
+            .modal-header {
+              background-image: url("images/Main Menu/5.jpg");
+
+              .modal-close-notice {
+                color: @main-font-color !important;
+              }
+            }
+          }
+        }
+      }
+
+      // -------------------------
+      //
+      //      #ContactVR
+      //
+      // -------------------------
+
+      #ContactVR {
+        .basic-modal-setup;
+
+        .modal-header {
+          background-image: url("images/Main Menu/6.jpg")
+        }
+
+        #vr-contact-form {
+          .aligntext;
+
+          form {
+            margin: 4% 0;
+
+            .row:first-child {
+              margin-bottom: 1.5%;
+            }
+
+            .first-input {
+              padding-right: 1%;
+            }
+
+            input, textarea {
+              .aligntext(left);
+              padding: 4% !important;
+              color: @main-font-color;
+              background: none;
+              .border-radius;
+              .main-border;
+
+              &::placeholder {
+                color: @main-font-op !important;
+              }
+            }
+
+            textarea {
+              padding: 2% !important;
+            }
+          }
+
+          .errorMessage {
+            .aligntext(left);
+            color: @vr-error;
+            font-weight: 600 !important;
+            font-size: 80%;
+            margin-top: 1%;
+          }
+
+          .form-submitted {
+            .display(inline-block);
+            color: @vr-violet;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: transform 1s, opacity 1s;
+            margin-top: 2%;
+            //
+            font-size: 70%;
+            font-weight: 600 !important;
+          }
         }
       }
     }
@@ -461,52 +1071,22 @@ body.home.blog.logged-in {
 
   // -------------------------
   //
-  //      Accessibility Menu [Modal]
+  //      Footer
   //
   // -------------------------
 
-  #vr-accessibility-menu {
-    .display(none);
-    .p-center;
-    opacity: 0;
-    transition: opacity 0.5s;
-    //
-    width: 70%;
-    height: auto;
-    padding: 4%;
-    font-weight: 200;
-    //
-    .reverse-style;
-    .box-shadow;
-    .border-radius;
-    //
-    z-index: 9999 !important;
-
-    h4 {
-      .display(inline);
-    }
-
-    #vr-accessibility-menu-close {
-      float: right;
-      font-size: 80%;
-    }
-
-    #vr-accessibility-menu-options {
-
-    }
-  }
-
-  // -------------------------
-  //
-  //      Navigation Bar
-  //
-  // -------------------------
-
-  nav#vr-navbar {
-    .display(none);
+  footer {
     .nobound;
-    width: @max;
-    height: 4em;
+    width: 100%;
+    height: auto;
+    background: @vr-gray !important;
+    color: @white !important;
+    //
+    padding: 3%;
+    margin-top: 5%;
+    vertical-align: center;
+    line-height: 150%;
+    .box-shadow;
 
     .container-fluid {
       .nobound;
@@ -515,545 +1095,50 @@ body.home.blog.logged-in {
       .row {
         .nobound;
         .fs;
+        .rel;
 
-        #vr-navbar-list {
-          .fs;
-          .aligntext;
-          .display(flex);
-
-          a {
-            flex: 1;
-            height: @max;
-            line-height: 4em;
-            margin: 0 1em;
-            //
-            background: #0c5460;
-            box-shadow: 5px 5px 15px black;
-
-            li.vr-navbar-list-item {
-              .fs;
-              //
-              list-style-image: none;
-              border: 1px @main-font-color solid;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // -------------------------
-  //
-  //      Main Content
-  //
-  // -------------------------
-
-  #vr-main {
-    .fs;
-    height: auto;
-
-    // -------------------------
-    //
-    //      Page Header
-    //
-    // -------------------------
-
-    #vr-header {
-      width: 95%;
-      margin: 0 auto 5%;
-      height: 400px;
-      background-image: url("images/header-bg.jpg");
-      .bg-setup;
-      //
-      filter: grayscale(20%);
-      .box-shadow;
-      .border-radius;
-      padding: 4%;
-      margin-bottom: 8%;
-
-      h1 {
-        text-transform: capitalize;
-        font-weight: 800;
-        margin-bottom: 2%;
-        word-spacing: 0.1em;
-        //
-        color: @main-font-color;
-      }
-
-      h2 {
-        font-size: @max;
-        line-height: 170% !important;
-        word-spacing: 0.1em;
-      }
-
-      #header-button-link {
-        .abs;
-        bottom: 10%;
-        //
-        padding: 1%;
-        color: @white !important;
-        background: @main-font-color;
-        border: 2px @main-font-color solid;
-        .border-radius;
-        .box-shadow;
-        opacity: 0.9;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
-
-    // -------------------------
-    //
-    //      Main Menu
-    //
-    // -------------------------
-
-    #vr-main-menu {
-      .nobound;
-      .fs;
-      width: 95%;
-      height: auto;
-      margin: 0 auto 4%;
-      //
-      padding-top: 3%;
-
-      .container-fluid {
-        .fs;
-
-        .row {
-          .fs;
-
-          &:first-child {
-            margin-bottom: 3%;
-          }
-
-          .vr-main-menu-item {
-            height: 16em;
-            .rel;
-
-            a {
-              width: 90%;
-              height: @max;
-              .p-center;
-
-              &:focus {
-                outline: @vr-orange 2px solid !important;
-                border: @vr-orange 2px solid !important;
-              }
-
-              .vr-mm-item {
-                .fs;
-                //
-                filter: grayscale(20%);
-                .box-shadow;
-                .border-radius;
-                .bg-setup-2;
-
-                &:hover {
-                  .box-shadow-hover;
-
-                  .vr-mm-item-content {
-                    background: @white;
-                  }
-                }
-
-                .vr-mm-item-content {
-                  width: @max;
-                  height: 50%;
-                  .abs;
-                  bottom: 0;
-                  //
-                  background: @white-op;
-                  color: @main-font-color;
-                  border-radius: 0 0 1em 1em;
-                  padding: 8%;
-
-                  h3 {
-                    font-size: 120%;
-                    font-weight: 600 !important;
-                  }
-
-                  h4 {
-                    font-size: 100%;
-                    margin-top: 3%;
-                    margin-left: 11%;
-                    line-height: 150%;
-                    word-spacing: 0.1em;
-
-                    span {
-                      .display(inline);
-                      font-weight: 600 !important;
-                    }
-                  }
-
-                  .indent-1 {
-                    margin-left: 12.5% !important;
-                  }
-
-                  .text-to-speech-icon {
-                    .abs;
-                    right: 1%;
-                    bottom: 1%;
-                    transform: translate(-50%, -50%);
-                    //
-                    color: @vr-violet;
-
-                    &:hover {
-                      cursor: pointer;
-                      color: @vr-green;
-                    }
-                  }
-                }
-              }
-
-              .vr-mm-1 {
-                background-image: url("images/Main Menu/1.jpg");
-              }
-
-              .vr-mm-2 {
-                background-image: url("images/Main Menu/2.jpg");
-              }
-
-              .vr-mm-3 {
-                background-image: url("images/Main Menu/3.jpg");
-              }
-
-              .vr-mm-4 {
-                background-image: url("images/Main Menu/4.jpg");
-              }
-
-              .vr-mm-5 {
-                background-image: url("images/Main Menu/5.jpg");
-              }
-
-              .vr-mm-6 {
-                background-image: url("images/Main Menu/6.jpg");
-              }
-            }
-          }
-        }
-      }
-    }
-
-    // -------------------------
-    //
-    //      #WhatIsVR
-    //
-    // -------------------------
-
-    #WhatIsVR {
-       .basic-modal-setup;
-
-       .modal-header {
-         background-image: url("images/Main Menu/1.jpg")
-       }
-
-      .modal-content {
-        #vr1-img1 {
-          float: right;
-          margin-left: 5%;
-        }
-
-        #vr1-img2 {
-          float: left;
-          margin-right: 5%;
-        }
-      }
-     }
-
-    // -------------------------
-    //
-    //      #HistoryOfVR
-    //
-    // -------------------------
-
-    #HistoryOfVR {
-      .basic-modal-setup;
-      .modal-header {
-        background-image: url("images/Main Menu/2.jpg")
-      }
-
-      .modal-content {
-        #vr2-img1 {
-          float: right;
-          margin-left: 5%;
-        }
-
-        #vr2-img2 {
-          float: left;
-          margin-right: 5%;
-        }
-      }
-    }
-
-    // -------------------------
-    //
-    //      #DevicesVR
-    //
-    // -------------------------
-
-    #DevicesVR {
-      .basic-modal-setup;
-      .modal-header {
-        background-image: url("images/Main Menu/3.jpg")
-      }
-
-      #vr-devices {
-        padding-top: 3%;
-
-        ul#vr-devices-list {
-          height: auto;
-
-          li {
-            //
-            // Devices List Item
-            //
-            .vr-devices-list-item {
-              .border-radius;
-              .box-shadow-2;
-              border: 0.5px #dddddd solid;
-              width: 100%;
-              height: 494px !important;
-              overflow: hidden;
-              //
-              margin-bottom: 5%;
-
-              .row {
-                .nobound;
-                .fs;
-
-                .col-first {
-                  padding: 0 !important;
-                  height: 100%;
-
-                  img {
-                    height: auto;
-                    width: auto;
-                  }
-                }
-
-                .col-second {
-                  padding: 3%;
-
-                  h4.vr-device-name {
-                    font-size: 180%;
-                    font-weight: 600 !important;
-                    color: @vr-violet !important;
-                    word-spacing: 0.1em !important;
-                    //
-                    margin-bottom: 4%;
-
-                    .h4-by {
-                      .display(inline);
-                      font-size: 60% !important;
-                      font-weight: 400 !important;
-                      color: @main-font-color !important;
-                    }
-
-                    .h4-manufacturer {
-                      .display(inline);
-                      font-size: 60% !important;
-                      color: @main-font-color !important;
-                    }
-
-                    .item-switch {
-                      font-size: 100%;
-                      transform: scale(0.8);
-                    }
-                  }
-
-                  div.vr-device-specs {
-                    margin-top: 4%;
-                    margin-bottom: 4%;
-
-                    .vr-device-spec {
-                      .display(inline-block);
-                      width: 40%;
-                      //
-                      margin-bottom: 2%;
-
-                      span {
-                        .display(inline) !important;
-                      }
-                    }
-                  }
-
-                  a.vr-device-buy {
-                    .display(inline-block);
-                    padding: 3%;
-                    float: left;
-                  }
-                }
-              }
-
-              &:hover {
-                .box-shadow;
-              }
-            }
-
-            .vr-devices-last-item {
-              margin-bottom: 3% !important;
-            }
-          }
-        }
-      }
-    }
-
-    // -------------------------
-    //
-    //      #AppsVR
-    //
-    // -------------------------
-
-    #AppsVR {
-      .basic-modal-setup;
-      .modal-header {
-        background-image: url("images/Main Menu/4.jpg")
-      }
-
-      #vr-apps {
-        padding-top: 3%;
-
-        ul#vr-apps-list {
-          height: auto;
-
-          li {
-            //
-            // Apps List Item
-            //
-            .vr-apps-list-item {
-              .border-radius;
-              .box-shadow-2;
-              border: 0.5px #dddddd solid;
-              width: 100%;
-              height: 125px !important;
-              overflow: hidden;
-              //
-              margin-bottom: 3%;
-
-              .row {
-                .fs;
-                .nobound;
-
-                .col-lg-2 {
-                  height: auto;
-
-                  img {
-                    height: auto;
-                  }
-                }
-
-                .col-lg-10 {
-                  padding: 3%;
-
-                  h4 {
-                    font-weight: 600 !important;
-                    margin-bottom: 2%;
-                  }
-
-                  p {
-                    .display(inline-block);
-                  }
-                }
-              }
-
-              &:hover {
-                .box-shadow;
-                cursor: pointer;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    // -------------------------
-    //
-    //      #DonateVR
-    //
-    // -------------------------
-
-    #DonateVR {
-      .basic-modal-setup;
-
-      .modal-dialog {
-        .modal-content {
-          .modal-header {
-            background-image: url("images/Main Menu/5.jpg");
-
-            .modal-close-notice {
-              color: @main-font-color !important;
-            }
-          }
-        }
-      }
-    }
-
-    // -------------------------
-    //
-    //      #ContactVR
-    //
-    // -------------------------
-
-    #ContactVR {
-      .basic-modal-setup;
-
-      .modal-header {
-        background-image: url("images/Main Menu/6.jpg")
-      }
-
-      #vr-contact-form {
-        .aligntext;
-
-        form {
-          margin: 4% 0;
-
-          .row:first-child {
-            margin-bottom: 1.5%;
-          }
-
-          .first-input {
-            padding-right: 1%;
-          }
-
-          input, textarea {
-            .aligntext(left);
-            padding: 4% !important;
-            color: @main-font-color;
-            background: none;
-            .border-radius;
-            .main-border;
-
-            &::placeholder {
-              color: @main-font-op !important;
-            }
-          }
-
-          textarea {
-            padding: 2% !important;
-          }
-        }
-
-        .errorMessage {
-          .aligntext(left);
-          color: @vr-error;
-          font-weight: 600 !important;
-          font-size: 80%;
-          margin-top: 1%;
-        }
-
-        .form-submitted {
+        .footer-content {
           .display(inline-block);
-          color: @vr-violet;
-          opacity: 0;
-          transform: scale(0.8);
-          transition: transform 1s, opacity 1s;
-          margin-top: 2%;
+          .abs;
+          top: 25%;
+        }
+
+        a {
+          &:link, &:visited, &:hover, &:active {
+            .display(inline) !important;
+            font-weight: 600 !important;
+            color: @white !important;
+            text-decoration: none !important;
+          }
+
+          &:hover {
+            text-decoration: underline !important;
+          }
+        }
+
+        .fa-heart {
+          color: indianred;
+        }
+
+        .footer-link {
+          .display(inline-block);
+          padding: 1%;
+          color: @white !important;
+          background: none !important;
+          border: 2px @white solid;
+          .border-radius;
           //
-          font-size: 70%;
           font-weight: 600 !important;
+
+          &:hover {
+            color: @vr-gray !important;
+            background: @white !important;
+            .box-shadow;
+          }
+
+          div {
+            .display(inline-block);
+          }
         }
       }
     }

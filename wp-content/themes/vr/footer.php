@@ -7,10 +7,36 @@
 */
 ?>
 
+</main>
+
+</div>
+
+<div class="clearfix"></div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer-content">
+                Website made with &nbsp;
+                <i aria-hidden="true" class="fas fa-heart" title="Heart icon"></i>
+                &nbsp;by <a href="https://github.com/JanHamara" target="_blank">Jan Hamara</a> &nbsp;|&nbsp; © Copyright 2019
+            </div>
+
+            <a href="#site-container" class="footer-link right">
+                <div aria-label="Go back to the top of the window">
+                    <i aria-hidden="true" class="far fa-arrow-alt-circle-up" title="Arrow pointing up"></i>
+                    &nbsp;
+                    Return to Top
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+
 <?php wp_footer(); ?>
 
 <!-- This is a script that validates data in contact form -->
-<!-- and sends the form is all values are correct -->
+<!-- and sends the form if all values are correct -->
 <script>
     function isNotEmpty(values, valueNames) {
         var isNotEmpty = true;
