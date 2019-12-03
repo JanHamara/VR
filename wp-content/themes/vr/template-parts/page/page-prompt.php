@@ -13,22 +13,22 @@
             <i aria-hidden="true" class="fas fa-assistive-listening-systems"  title="Assistive Listening Systems Icon"></i>
         </div>
         <div class="row">
-            <h1>Hello there, would you like to enable VoiceOver support?</h1>
+            <h1>Hello, would you like to enable VoiceOver support?</h1>
         </div>
         <div class="row last-row">
             <div class="col-lg-6">
-                <div id="vo-on" class="vr-button vr-yes-button" aria-label="VoiceOver On Switch">
+                <a href="javascript:void(0)" id="vo-on" class="vr-button vr-yes-button" aria-label="VoiceOver On Switch">
                     &nbsp;<i aria-hidden="true" class="fas fa-volume-up" title="VoiceOver Enabled Icon"></i>
                     &nbsp;&nbsp;
                     Yes, I want to use Voice Over&nbsp;
-                </div>
+                </a>
             </div>
             <div class="col-lg-6">
-                <div id="vo-off" class="vr-button vr-no-button" aria-label="VoiceOver Off Switch">
+                <a href="javascript:void(0)" id="vo-off" class="vr-button vr-no-button" aria-label="VoiceOver Off Switch">
                     &nbsp;<i aria-hidden="true" class="fas fa-volume-off" title="VoiceOver Disabled Icon"></i>
                     &nbsp;&nbsp;
                     No, I don't need Voice Over&nbsp;
-                </div>
+                </a>
             </div>
         </div>
     </div>
