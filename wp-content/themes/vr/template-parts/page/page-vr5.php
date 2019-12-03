@@ -11,7 +11,7 @@
     <div class="modal-content">
         <div class="modal-header">
             <!--      Do not be afraid to give disabled users instructions      -->
-            <span class="modal-close-notice">Click outside this window or press&nbsp; <span class="vr-key">ESC</span> &nbsp;to close this dialog</span>
+            <span class="modal-close-notice">Click outside this window or press&nbsp; <span class="vr-key-reverse">ESC</span> &nbsp;to close this dialog</span>
         </div>
         <div class="modal-body">
             <!--    Main Heading    -->
@@ -21,13 +21,8 @@
                 Make a donation
             </h3>
 
-            <!--    Video Switch    -->
-            <a href="#" class="modal-switch" aria-label="Video Content Switch" target="_blank">
-                <i aria-hidden="true" class="fa fa-video video-content-icon" title="Video Content Icon"></i>
-            </a>
-
             <!--    Text-to-Speech Switch    -->
-            <a href="#" class="modal-switch" aria-label="Text-To-Speech Switch">
+            <a id="vo-donate" href="#" class="modal-switch" aria-label="Text-To-Speech Switch">
                 <i aria-hidden="true" class="fa fa-volume-up text-to-speech-icon" title="Text-to-Speech Icon"></i>
             </a>
 

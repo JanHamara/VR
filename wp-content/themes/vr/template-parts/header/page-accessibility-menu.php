@@ -12,7 +12,7 @@
     <div aria-label="Accessibility Menu Heading">
         <i aria-hidden="true" class="fa fa-universal-access" title="Accessibility icon on accessibility menu heading"></i>
         &nbsp;<h4>Accessibility Menu</h4>
-        <span id="vr-accessibility-menu-close">Click the button again or press&nbsp; <span class="vr-key-reverse">ESC</span> &nbsp;to close this menu</span>
+        <span id="vr-accessibility-menu-close">Click the button again or press&nbsp; <span class="vr-key">ESC</span> &nbsp;to close this menu</span>
     </div>
 
     <hr/>

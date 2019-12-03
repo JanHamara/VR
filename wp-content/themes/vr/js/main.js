@@ -60,6 +60,7 @@ jQuery( document ).ready(function() {
         VoiceOver = false;
         setTimeout(function () {
             jQuery("#vr-accessibility-legend").modal('show');
+            accessibilityLegend = true;
         }, 500);
     });
 
@@ -136,6 +137,7 @@ jQuery( document ).ready(function() {
             if (testEsc()) {
                 jQuery("#WhatIsVR").modal('hide');
                 vrMenu1On = false;
+                speechSynthesis.cancel();
             }
         }
 
@@ -143,6 +145,7 @@ jQuery( document ).ready(function() {
             if (testEsc()) {
                 jQuery("#HistoryOfVR").modal('hide');
                 vrMenu2On = false;
+                speechSynthesis.cancel();
             }
         }
 
@@ -150,6 +153,7 @@ jQuery( document ).ready(function() {
             if (testEsc()) {
                 jQuery("#DevicesVR").modal('hide');
                 vrMenu3On = false;
+                speechSynthesis.cancel();
             }
         }
 
@@ -157,6 +161,7 @@ jQuery( document ).ready(function() {
             if (testEsc()) {
                 jQuery("#AppsVR").modal('hide');
                 vrMenu4On = false;
+                speechSynthesis.cancel();
             }
         }
 
@@ -164,6 +169,7 @@ jQuery( document ).ready(function() {
             if (testEsc()) {
                 jQuery("#DonateVR").modal('hide');
                 vrMenu5On = false;
+                speechSynthesis.cancel();
             }
         }
 
@@ -171,6 +177,7 @@ jQuery( document ).ready(function() {
             if (testEsc()) {
                 jQuery("#ContactVR").modal('hide');
                 vrMenu6On = false;
+                speechSynthesis.cancel();
             }
         }
 
@@ -225,6 +232,59 @@ jQuery( document ).ready(function() {
     jQuery("#vo-link06").on('click', function () {
         speechSynthesis.speak(new SpeechSynthesisUtterance('Have a question?'));
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click if you want to ask a question, or if you require any help.'));
+    });
+
+    //
+    //
+    // Menu Items Speech Activators
+    //
+    //
+
+    jQuery("#vo-whatisvr").on('click', function () {
+        speechSynthesis.speak(new SpeechSynthesisUtterance('What is Virtual Reality? Virtual Reality is a form of technology, that uses special devices and programs to create a digital world, separate from our real world, that can make you feel like you are in a real environment.\n' +
+            '\n' +
+            'This digital world is presented to you on a device worn on your head, that could be described as special kind of glasses. This device shows you a digital environment around you in such a way, that makes your eyes and brain believe it is real world.\n' +
+            '\n' +
+            'Picture of Virtual Reality Headset\n' +
+            'Image 1 | Virtual Reality Headset\n' +
+            'This device can work in some cases only by itself, or connected to a computer. In addition to the head device, you can also use two controllers that are held in your hands. These controllers can record movement of your hands and use this to reproduce movement of your hands inside the virtual world.'));
+    });
+
+
+    jQuery("#vo-history").on('click', function () {
+        speechSynthesis.speak(new SpeechSynthesisUtterance('History of Virtual Reality. The origin of the concept of Virtual Reality is not totally clear. Some people consider it to come from Stanley Weinbaum\'s science fiction story Pygmalion\'s Spectacles. In this story, the main character wears a pair of goggles which transport him into a fictional world, which stimulates his senses and displays digital recordings.\n' +
+            '\n' +
+            'However, the first real developments of virtual reality technology started in 1830s, when Sir Charles Wheatstone used his research to construct the stereoscope. In 1956, a cinematographer Morton Heilig created Sensorama, the first virtual reality machine. This machine was a large booth, where the user could sit on a vibrating chair and enjoy six short films on three dimensional screen. The machine also added other factors to stimulate other senses, such as smell, audio or effects like wind.\n' +
+            '\n' +
+            'Then later in 1965, a computer scientist Ivan Sutherland, created a head mounted device that was said to replicate reality so well that the user would not be able to differentiate from actual reality. It was called Ultimate Display and it allowed user to interact with objects in virtual reality. His work on this device is widely considered as one of the most important steps in virtual reality technology development.'));
+    });
+
+    jQuery("#vo-devices").on('click', function () {
+        speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality Devices. If you are interested in learning about various virtual reality devices, or if you want to compare their functionality\n' +
+            'and find out which one is the best for you, feel free to use this simple list of various virtual reality devices available on the market.'));
+    });
+
+    jQuery("#vo-apps").on('click', function () {
+        speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality Applications. Do you want to know what virtual reality application are available for various devices at the moment? Do you want to know if you can swim in the ocean in the virtual reality, drive a car on your favourite cirucit, or if you can visit your dream destination?\n' +
+            '\n' +
+            'Go ahead and check out this comprehensive list of Virtual Reality application, and find out ones you would like to try!'));
+    });
+
+    jQuery("#vo-donate").on('click', function () {
+        speechSynthesis.speak(new SpeechSynthesisUtterance('Help disabled people see the beauty of our world.\n' +
+            '\n' +
+            'Many of us cannot imagine what life with a disability feels like, whether we talk about a movement impairment, learning disability, autism, dyslexia or any other, a disability always changes the life of the individual to a nightmare, compared to living a normal life.\n' +
+            '\n' +
+            'Some individuals cope with their disability amazingly well and are an inspiration to all of us, some of them are not so fortunate. Despite that, each and every one of these individuals deserve a chance for better life and if we can do anything to help them in this quest, we definitely should do so.\n' +
+            '\n' +
+            'As a very keen traveler myself and a student of Digital Media, I have created this website to be in accordance with the criteria of Web Accessibility, as defined by W3C Consortium. It is meant to be usable by all people with various disabilities and it\'s purpose is to explain to them what Virtual Reality technology is, how they can use it, how they can buy equipment for it, what applications there are available, and so on.\n' +
+            '\n' +
+            'However, even if I manage to reach a wider audience of disabled people with this website, VR equipment is currently still extremely expensive and thus I have decided to add a donation option to the website, where people who want to help the cause, could donate a voluntary amount of money towards VR equipment for disabled people. Please use button below, if you wish to donate.'));
+    });
+
+    jQuery("#vo-contact").on('click', function () {
+        speechSynthesis.speak(new SpeechSynthesisUtterance('If you have any questions, if you need help with buying or using VR equipment, or if you want to simply provide feedback on the website,\n' +
+            'please use this form to contact me and I will get back to you as fast as possible.'));
     });
 });
 
