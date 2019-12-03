@@ -39,6 +39,3 @@
     <div id="vr-accessibility-menu">
         <?php get_template_part( 'template-parts/header/page', 'accessibility-menu' ); ?>
     </div>
-
-    <!--    This links to page-navigation template, which contains the navigation bar   -->
-    <?php get_template_part( 'template-parts/header/page', 'navigation' ); ?>

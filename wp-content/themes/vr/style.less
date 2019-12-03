@@ -467,7 +467,7 @@ body.home.blog.logged-in {
 
     // -------------------------
     //
-    //      Accessibility Menu [Modal]
+    //      Accessibility Menu [ Modal ]
     //
     // -------------------------
 
@@ -504,48 +504,12 @@ body.home.blog.logged-in {
 
     // -------------------------
     //
-    //      Navigation Bar
+    //      VoiceOver Support Prompt
     //
     // -------------------------
 
-    nav#vr-navbar {
-      .display(none);
-      .nobound;
-      width: @max;
-      height: 4em;
-
-      .container-fluid {
-        .nobound;
-        .fs;
-
-        .row {
-          .nobound;
-          .fs;
-
-          #vr-navbar-list {
-            .fs;
-            .aligntext;
-            .display(flex);
-
-            a {
-              flex: 1;
-              height: @max;
-              line-height: 4em;
-              margin: 0 1em;
-              //
-              background: #0c5460;
-              box-shadow: 5px 5px 15px black;
-
-              li.vr-navbar-list-item {
-                .fs;
-                //
-                list-style-image: none;
-                border: 1px @main-font-color solid;
-              }
-            }
-          }
-        }
-      }
+    #voiceover-support-prompt {
+      
     }
 
     // -------------------------

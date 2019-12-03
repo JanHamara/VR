@@ -6,7 +6,7 @@ require('../css/bootstrap-theme.min.css');
 require('../css/bootstrap.min.css');
 require('../css/all.css');
 require('./all');
-require('./responsivevoice');
+// require('./responsivevoice');
 require('../style.less');
 
 var accessibilityMenuOn = false;
@@ -19,14 +19,14 @@ var vrMenu6On = false;
 
 jQuery( document ).ready(function() {
 
-    speechSynthesis.speak(new SpeechSynthesisUtterance("hello world"));
-
-    if(responsiveVoice.voiceSupport()) {
-        responsiveVoice.speak("Virtual Reality");
-        responsiveVoice.speak("A new chance for people with disability");
-    } else {
-        alert('Sorry, but your browser does not seem to work with voice support! Please use Google Chrome to be able to use text-to-speech buttons!');
-    }
+    // speechSynthesis.speak(new SpeechSynthesisUtterance("Virtual Reality, a new chance for people with disability"));
+    //
+    // if(responsiveVoice.voiceSupport()) {
+    //     responsiveVoice.speak("Virtual Reality");
+    //     responsiveVoice.speak("A new chance for people with disability");
+    // } else {
+    //     alert('Sorry, but your browser does not seem to work with voice support! Please use Google Chrome to be able to use text-to-speech buttons!');
+    // }
 
     // Function to open accessibility menu by clicking on button
     jQuery("#vr-accessibility-menu-link").on('click', function() {
