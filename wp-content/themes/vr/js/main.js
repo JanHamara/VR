@@ -6,7 +6,6 @@ require('../css/bootstrap-theme.min.css');
 require('../css/bootstrap.min.css');
 require('../css/all.css');
 require('./all');
-// require('./responsivevoice');
 require('../style.less');
 
 var accessibilityMenuOn = false;
@@ -41,6 +40,10 @@ jQuery( document ).ready(function() {
     jQuery("#vo-on").on('click', function () {
         jQuery("#voiceover-support-prompt").modal('hide');
         VoiceOver = true;
+        less.modifyVars({
+            '@main-font-color': 'red',
+            '@bg': 'orange'
+        });
 
         if (VoiceOver === true) {
             speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality. A new chance for people with disability.'));
@@ -66,7 +69,7 @@ jQuery( document ).ready(function() {
 
     // If they clink on sound button in Accessibility Legend modal play the text
     jQuery("#legend2").on('click', function () {
-        speechSynthesis.speak(new SpeechSynthesisUtterance('Click these icons to play a spoken version of the text.'));
+        speechSynthesis.speak(new SpeechSynthesisUtterance('Click sound icons to play a spoken version of the text.'));
     });
 
     // Function to open accessibility menu by clicking on button
@@ -245,8 +248,6 @@ jQuery( document ).ready(function() {
             '\n' +
             'This digital world is presented to you on a device worn on your head, that could be described as special kind of glasses. This device shows you a digital environment around you in such a way, that makes your eyes and brain believe it is real world.\n' +
             '\n' +
-            'Picture of Virtual Reality Headset\n' +
-            'Image 1 | Virtual Reality Headset\n' +
             'This device can work in some cases only by itself, or connected to a computer. In addition to the head device, you can also use two controllers that are held in your hands. These controllers can record movement of your hands and use this to reproduce movement of your hands inside the virtual world.'));
     });
 
@@ -303,4 +304,3 @@ function hideAccessibilityMenu(accessibilityMenu) {
     }, 500);
     accessibilityMenuOn = false;
 }
-

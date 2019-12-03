@@ -22,7 +22,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/bio8ehc.css">
 
     <?php wp_head(); ?>

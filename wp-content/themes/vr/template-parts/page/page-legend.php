@@ -24,7 +24,6 @@
             <h1>
                 This website aims to follow all web accessibility principles and guidelines,
                 in order to be fully operable by people with disabilities.
-                <br/><br/>
                 Please check out following instructions, in order to understand accessibility features of the website,
                 so that you can consume content of this website with no barriers.
             </h1>

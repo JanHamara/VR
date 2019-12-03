@@ -23,6 +23,7 @@ Text Domain: VR
 @min: 0%;
 @max: 100%;
 @font: myriad-pro, sans-serif;
+@bg: ghostwhite;
 @white: ghostwhite;
 @white-op: rgba(248, 248, 254, 0.9);
 @main-font-color: rgb(16,19,80);
@@ -147,8 +148,8 @@ Text Domain: VR
 }
 
 .reverse-style {
-  color: @white !important;
-  background: @main-font-color !important;
+  color: @main-font-color !important;
+  background: @white !important;
 }
 
 .vr-key {
@@ -320,6 +321,10 @@ Text Domain: VR
         font-size: 200%;
       }
 
+      .universal-access {
+        font-size: 300% !important;
+      }
+
       h1 {
         font-size: 140%;
         font-weight: 600 !important;
@@ -460,7 +465,7 @@ a {
 // ------------------------------------------------------------------------------
 
 body.home.blog.logged-in {
-  background: ghostwhite;
+  background: @bg;
   color: @main-font-color;
   //
 
@@ -531,15 +536,102 @@ body.home.blog.logged-in {
 
       h4 {
         .display(inline);
+        font-weight: 600 !important;
       }
 
       #vr-accessibility-menu-close {
         float: right;
         font-size: 80%;
+        font-weight: 400 !important;
       }
 
       #vr-accessibility-menu-options {
+        font-weight: 400 !important;
 
+        .vr-accessibility-menu-item {
+          margin-top: 3%;
+
+          .vr-accessibility-menu-item-switch {
+            .display(inline-block);
+            margin-left: 5%;
+
+            .switch {
+              position: relative;
+              display: inline-block;
+              width: 44px;
+              height: 24px;
+            }
+
+            .switch input {
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+
+            .slider {
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: @vr-error;
+              -webkit-transition: .4s;
+              transition: .4s;
+            }
+
+            .slider:before {
+              position: absolute;
+              content: "";
+              height: 18px;
+              width: 18px;
+              left: 3px;
+              bottom: 3px;
+              background-color: @white;
+              -webkit-transition: .4s;
+              transition: .4s;
+            }
+
+            input:checked + .slider {
+              background-color: limegreen;
+            }
+
+            input:focus + .slider {
+              box-shadow: 0 0 1px limegreen;
+            }
+
+            input:checked + .slider:before {
+              -webkit-transform: translateX(18px);
+              -ms-transform: translateX(18px);
+              transform: translateX(18px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+              border-radius: 34px;
+            }
+
+            .slider.round:before {
+              border-radius: 50%;
+            }
+
+            // Font Color
+            #vr-font-color, #vr-bg-color {
+              width: 44px !important;
+              height: 24px !important;
+              border: none !important;
+              padding: 0 !important;
+            }
+          }
+
+          .indent-2 {
+            margin-left: 11.8%;
+          }
+
+          .indent-3 {
+            margin-left: 11.4%;
+          }
+        }
       }
     }
 
@@ -593,7 +685,8 @@ body.home.blog.logged-in {
 
     #vr-accessibility-legend {
       .prompt-style;
-      height: 92%;
+      height: 93%;
+      width: 85%;
 
       .container-fluid {
         padding: 7%;
@@ -603,7 +696,7 @@ body.home.blog.logged-in {
           width: 50%;
           .p-center;
           top: 5%;
-          left: 81%;
+          left: 86.5%;
           font-size: 80%;
 
           a {
@@ -619,12 +712,13 @@ body.home.blog.logged-in {
             font-size: 100%;
             line-height: 150%;
             word-spacing: 0.1em !important;
+            margin-bottom: 4%;
           }
 
           .access-features-item {
             .display(block);
             .aligntext(left);
-            margin-top: 6%;
+            margin-top: 4%;
 
             .vr-accessibility-menu-link {
               .accessibility-menu-style;

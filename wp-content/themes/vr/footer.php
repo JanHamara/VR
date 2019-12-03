@@ -104,7 +104,6 @@
     }
 </script>
 
-<!--<script src="https://code.responsivevoice.org/responsivevoice.js?key=F24VsNth"></script>-->
 
 </body>
 </html>
