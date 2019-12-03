@@ -36,7 +36,7 @@
         <?php get_template_part( 'template-parts/header/page', 'accessibility-bar' ); ?>
     </div>
 
-    <div id="vr-accessibility-menu" onmouseenter="speechSynthesis.speak(new SpeechSynthesisUtterance('Accessibility Menu'));">
+    <div id="vr-accessibility-menu">
         <?php get_template_part( 'template-parts/header/page', 'accessibility-menu' ); ?>
     </div>
 

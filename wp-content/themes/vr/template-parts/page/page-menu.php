@@ -103,7 +103,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 vr-main-menu-item">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 vr-main-menu-item" onmouseenter="speechSynthesis.speak(new SpeechSynthesisUtterance('Make a donation'));">
                 <a href="#DonateVR" id="Link05" data-toggle="modal" data-target="#DonateVR">
                     <div class="vr-mm-item vr-mm-5">
                         <div class="vr-mm-item-content" aria-label="Donation Option">
