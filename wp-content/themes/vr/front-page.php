@@ -9,6 +9,14 @@
 
 <?php get_header(); ?>
 
+<!--    Because Google doesn't allow autoplay of speech anymore     -->
+<!--    Make the site pop out a speech enabler prompt     -->
+<!--    If user wants text-to-speech to be available then run     -->
+<!--    speechSynthesis.speak(new SpeechSynthesisUtterance('hello world'));     -->
+<!--    Since then you can run all the other activators     -->
+
+
+
     <main id="vr-main">
         <header id="vr-header">
             <?php get_template_part( 'template-parts/header/page', 'header' ); ?>

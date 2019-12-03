@@ -32,11 +32,11 @@
 
     <div id="site-container">
 
-    <div id="vr-accessibility-bar">
+    <div id="vr-accessibility-bar" onclick="speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality. A new chance for people with disabilities.'));">
         <?php get_template_part( 'template-parts/header/page', 'accessibility-bar' ); ?>
     </div>
 
-    <div id="vr-accessibility-menu">
+    <div id="vr-accessibility-menu" onmouseenter="speechSynthesis.speak(new SpeechSynthesisUtterance('Accessibility Menu'));">
         <?php get_template_part( 'template-parts/header/page', 'accessibility-menu' ); ?>
     </div>
 
