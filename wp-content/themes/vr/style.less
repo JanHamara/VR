@@ -167,8 +167,8 @@ Text Domain: VR
 .vr-key-reverse {
   .vr-key;
   //
-  background: @white;
-  color: @main-font-color;
+  background: @main-font-color !important;
+  color: @white !important;
 }
 
 //
@@ -593,11 +593,23 @@ body.home.blog.logged-in {
 
     #vr-accessibility-legend {
       .prompt-style;
-      height: 90%;
+      height: 92%;
 
       .container-fluid {
         padding: 7%;
         height: auto;
+
+        .legend-close-notice {
+          width: 50%;
+          .p-center;
+          top: 5%;
+          left: 81%;
+          font-size: 80%;
+
+          a {
+            .display(inline);
+          }
+        }
 
         .row {
           height: auto;
@@ -830,14 +842,10 @@ body.home.blog.logged-in {
                   transform: translate(-50%, -50%);
                   //
                   color: @vr-violet;
-                  z-index: 9999 !important;
 
                   &:hover {
                     cursor: pointer;
                     color: @vr-green;
-                  }
-
-                  .text-to-speech-icon {
                   }
                 }
               }

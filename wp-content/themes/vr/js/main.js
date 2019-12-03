@@ -17,6 +17,7 @@ var vrMenu4On = false;
 var vrMenu5On = false;
 var vrMenu6On = false;
 var VoiceOver = false;
+var accessibilityLegend = false;
 
 jQuery( document ).ready(function() {
 
@@ -49,6 +50,7 @@ jQuery( document ).ready(function() {
 
         setTimeout(function () {
             jQuery("#vr-accessibility-legend").modal('show');
+            accessibilityLegend = true;
         }, 500);
     });
 
@@ -172,6 +174,13 @@ jQuery( document ).ready(function() {
             }
         }
 
+        if (accessibilityLegend === true) {
+            if (testEsc()) {
+                jQuery("#vr-accessibility-legend").modal('hide');
+                accessibilityLegend = false;
+            }
+        }
+
         function testEsc() {
             let keyCode = e.key;
             if (keyCode === "Escape") {
@@ -179,6 +188,10 @@ jQuery( document ).ready(function() {
             }
         }
     };
+
+    jQuery("#legend-close").on('click', function() {
+        jQuery("#vr-accessibility-legend").modal('hide');
+    });
 
     //
     //  Text-to-Speech Button Activators

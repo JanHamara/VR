@@ -8,6 +8,14 @@
 ?>
 
     <div class="container-fluid">
+
+        <span class="modal-close-notice legend-close-notice">
+            <a id="legend-close" href="javascript:void(0)" onclick="">
+                Click here
+            </a>
+            or press&nbsp; <span class="vr-key-reverse">ESC</span> &nbsp;to close this dialog
+        </span>
+
         <div class="row">
             <!--      Indicate the purpose of the modal with universal access icon      -->
             <i aria-hidden="true" class="fa fa-universal-access universal-access" title="Universal Access Icon"></i>
