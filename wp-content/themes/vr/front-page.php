@@ -15,8 +15,9 @@
     <!--    speechSynthesis.speak(new SpeechSynthesisUtterance('hello world'));     -->
     <!--    Since then you can run all the other activators of speechSynthesis     -->
     <!--    More info here: https://www.chromestatus.com/feature/5687444770914304     -->
-    <div id="voiceover-support-prompt">
-        <?php get_template_part( 'template-parts/header/page', 'prompt' ); ?>
+
+    <div class="modal fade" id="voiceover-support-prompt" tabindex="-1" role="dialog" aria-labelledby="VoiceOver Support Prompt" aria-hidden="true">
+        <?php get_template_part( 'template-parts/page/page', 'prompt' ); ?>
     </div>
 
     <main id="vr-main">

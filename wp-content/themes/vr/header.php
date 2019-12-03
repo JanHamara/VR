@@ -32,7 +32,7 @@
 
     <div id="site-container">
 
-    <div id="vr-accessibility-bar" onclick="speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality. A new chance for people with disabilities.'));">
+    <div id="vr-accessibility-bar">
         <?php get_template_part( 'template-parts/header/page', 'accessibility-bar' ); ?>
     </div>
 

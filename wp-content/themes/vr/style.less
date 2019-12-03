@@ -509,7 +509,66 @@ body.home.blog.logged-in {
     // -------------------------
 
     #voiceover-support-prompt {
-      
+      .p-center;
+      .aligntext;
+      width: 60%;
+      height: auto;
+      overflow-y: hidden;
+      //
+      background: @white !important;
+      color: @main-font-color !important;
+      .border-radius;
+      .box-shadow;
+      z-index: 9999 !important;
+
+      .container-fluid {
+        .fs;
+        .nobound;
+        padding: 7% 3% 6%;
+
+        .row {
+          .nobound;
+
+          .fa-assistive-listening-systems {
+            color: @vr-violet;
+            font-size: 200%;
+          }
+
+          h1 {
+            font-size: 140%;
+            font-weight: 600 !important;
+            margin: 6% auto 6%;
+          }
+
+          .vr-button {
+            .display(inline-block);
+            padding: 3% 5%;
+            .box-shadow;
+            .border-radius;
+            //
+            color: @white !important;
+            font-weight: 600 !important;
+
+            &:hover {
+              .box-shadow-hover;
+              cursor: pointer;
+            }
+          }
+
+          .vr-yes-button {
+            background: @vr-green;
+          }
+
+          .vr-no-button {
+            background: @vr-error;
+          }
+        }
+
+        .last-row {
+          width: 80%;
+          margin: auto;
+        }
+      }
     }
 
     // -------------------------

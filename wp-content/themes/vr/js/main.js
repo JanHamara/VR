@@ -16,17 +16,32 @@ var vrMenu3On = false;
 var vrMenu4On = false;
 var vrMenu5On = false;
 var vrMenu6On = false;
+var VoiceOver = false;
 
 jQuery( document ).ready(function() {
 
+    setTimeout(function() {
+        jQuery("#voiceover-support-prompt").modal('show');
+    }, 500);
+
+    jQuery("#vo-on").on('click', function() {
+        jQuery("#voiceover-support-prompt").modal('hide');
+        VoiceOver = true;
+
+        if(VoiceOver === true) {
+            speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality. A new chance for people with disabilities.'));
+        } else {
+            alert('Sorry, but your browser does not seem to work with voice support! Please use Google Chrome to be able to use text-to-speech buttons!');
+        }
+    });
+
+    jQuery("#vo-off").on('click', function() {
+        jQuery("#voiceover-support-prompt").modal('hide');
+        speechSynthesisInstance.cancel();
+        VoiceOver = false;
+    });
+
     // speechSynthesis.speak(new SpeechSynthesisUtterance("Virtual Reality, a new chance for people with disability"));
-    //
-    // if(responsiveVoice.voiceSupport()) {
-    //     responsiveVoice.speak("Virtual Reality");
-    //     responsiveVoice.speak("A new chance for people with disability");
-    // } else {
-    //     alert('Sorry, but your browser does not seem to work with voice support! Please use Google Chrome to be able to use text-to-speech buttons!');
-    // }
 
     // Function to open accessibility menu by clicking on button
     jQuery("#vr-accessibility-menu-link").on('click', function() {
