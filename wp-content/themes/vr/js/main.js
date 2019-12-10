@@ -29,10 +29,12 @@ jQuery( document ).ready(function() {
     speechSynthesis.speak(new SpeechSynthesisUtterance('Hello, would you like to enable VoiceOver support? You can click tab button, to select between yes or no, and press ENTER to confirm your selection.'));
 
     jQuery("#vo-on").on('focus', function() {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Yes, I want to use VoiceOver'));
     });
 
     jQuery("#vo-off").on('focus', function() {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance("No, I don't need VoiceOver"));
     });
 
@@ -46,6 +48,7 @@ jQuery( document ).ready(function() {
         });
 
         if (VoiceOver === true) {
+            speechSynthesis.cancel();
             speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality. A new chance for people with disability.'));
         } else {
             alert('Sorry, but your browser does not seem to work with voice support! Please use Google Chrome to be able to use text-to-speech buttons!');
@@ -61,6 +64,7 @@ jQuery( document ).ready(function() {
     jQuery("#vo-off").on('click', function () {
         jQuery("#voiceover-support-prompt").modal('hide');
         VoiceOver = false;
+        speechSynthesis.cancel();
         setTimeout(function () {
             jQuery("#vr-accessibility-legend").modal('show');
             accessibilityLegend = true;
@@ -69,6 +73,7 @@ jQuery( document ).ready(function() {
 
     // If they clink on sound button in Accessibility Legend modal play the text
     jQuery("#legend2").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click sound icons to play a spoken version of the text.'));
     });
 
@@ -208,31 +213,37 @@ jQuery( document ).ready(function() {
     //
 
     jQuery("#vo-link01").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('What is Virtual Reality?'));
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click to learn about virtual reality technology and how you can use it.'));
     });
 
     jQuery("#vo-link02").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('History of Virtual Reality'));
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click to learn about history of virtual reality technology.'));
     });
 
     jQuery("#vo-link03").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality Devices'));
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click to browse or buy various virtual reality devices.'));
     });
 
     jQuery("#vo-link04").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality Applications'));
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click to browse a list of applications, you can play in virtual reality.'));
     });
 
     jQuery("#vo-link05").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Make a donation'));
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click if you want to donate money or buy VR device for disabled people.'));
     });
 
     jQuery("#vo-link06").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Have a question?'));
         speechSynthesis.speak(new SpeechSynthesisUtterance('Click if you want to ask a question, or if you require any help.'));
     });
@@ -244,6 +255,7 @@ jQuery( document ).ready(function() {
     //
 
     jQuery("#vo-whatisvr").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('What is Virtual Reality? Virtual Reality is a form of technology, that uses special devices and programs to create a digital world, separate from our real world, that can make you feel like you are in a real environment.\n' +
             '\n' +
             'This digital world is presented to you on a device worn on your head, that could be described as special kind of glasses. This device shows you a digital environment around you in such a way, that makes your eyes and brain believe it is real world.\n' +
@@ -253,6 +265,7 @@ jQuery( document ).ready(function() {
 
 
     jQuery("#vo-history").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('History of Virtual Reality. The origin of the concept of Virtual Reality is not totally clear. Some people consider it to come from Stanley Weinbaum\'s science fiction story Pygmalion\'s Spectacles. In this story, the main character wears a pair of goggles which transport him into a fictional world, which stimulates his senses and displays digital recordings.\n' +
             '\n' +
             'However, the first real developments of virtual reality technology started in 1830s, when Sir Charles Wheatstone used his research to construct the stereoscope. In 1956, a cinematographer Morton Heilig created Sensorama, the first virtual reality machine. This machine was a large booth, where the user could sit on a vibrating chair and enjoy six short films on three dimensional screen. The machine also added other factors to stimulate other senses, such as smell, audio or effects like wind.\n' +
@@ -261,17 +274,20 @@ jQuery( document ).ready(function() {
     });
 
     jQuery("#vo-devices").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality Devices. If you are interested in learning about various virtual reality devices, or if you want to compare their functionality\n' +
             'and find out which one is the best for you, feel free to use this simple list of various virtual reality devices available on the market.'));
     });
 
     jQuery("#vo-apps").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Virtual Reality Applications. Do you want to know what virtual reality application are available for various devices at the moment? Do you want to know if you can swim in the ocean in the virtual reality, drive a car on your favourite cirucit, or if you can visit your dream destination?\n' +
             '\n' +
             'Go ahead and check out this comprehensive list of Virtual Reality application, and find out ones you would like to try!'));
     });
 
     jQuery("#vo-donate").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('Help disabled people see the beauty of our world.\n' +
             '\n' +
             'Many of us cannot imagine what life with a disability feels like, whether we talk about a movement impairment, learning disability, autism, dyslexia or any other, a disability always changes the life of the individual to a nightmare, compared to living a normal life.\n' +
@@ -284,8 +300,29 @@ jQuery( document ).ready(function() {
     });
 
     jQuery("#vo-contact").on('click', function () {
+        speechSynthesis.cancel();
         speechSynthesis.speak(new SpeechSynthesisUtterance('If you have any questions, if you need help with buying or using VR equipment, or if you want to simply provide feedback on the website,\n' +
             'please use this form to contact me and I will get back to you as fast as possible.'));
+    });
+
+    jQuery("#vo-device-1").on('click', function () {
+        speechSynthesis.cancel();
+        speechSynthesis.speak(new SpeechSynthesisUtterance('Google Cardboard is the most basic and affordable virtual reality head-mounted display on the market. While it does not offer much comfort and realism during the experience, it is a great the entry point for those, who want to experience virtual reality for a first time, in a simple, fun and affordable way.'));
+    });
+
+    jQuery("#vo-device-2").on('click', function () {
+        speechSynthesis.cancel();
+        speechSynthesis.speak(new SpeechSynthesisUtterance('Google DayDream is the more advanced virtual reality head-mounted headset by Google. It allows you to enjoy virtual reality with soft and lightweight fabric headset, that is very comfortable to wear and it also includes a handheld easy-to-use controller. It still requires a compatible smartphone to use, however.'));
+    });
+
+    jQuery("#vo-device-3").on('click', function () {
+        speechSynthesis.cancel();
+        speechSynthesis.speak(new SpeechSynthesisUtterance('Oculus Rift is a virtual reality headset, specially designed for gaming, that pushes the boundaries of Virtual Reality with the biggest development team on the market. It offers an incredible quality of virtual content and works with two handheld controllers to give user full control over the virtual world.'));
+    });
+
+    jQuery("#vo-device-4").on('click', function () {
+        speechSynthesis.cancel();
+        speechSynthesis.speak(new SpeechSynthesisUtterance('HTC Vive Pro is a professional virtual reality system, that is considered to be the most immersive virtual reality system on the market at the moment. It is very expensive and requires a powerful computer to run, but it offers a breathtaking image quality, two controllers, one for each hand, and a truly realistic VR experience.'));
     });
 });
 

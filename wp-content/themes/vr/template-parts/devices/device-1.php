@@ -23,6 +23,11 @@
                 <a href="https://www.youtube.com/watch?v=SxAj2lyX4oU" class="modal-switch item-switch" aria-label="Video Content Switch" target="_blank">
                     <i aria-hidden="true" class="fa fa-video video-content-icon" title="Video Content Icon"></i>
                 </a>
+
+                <!--    Text-to-Speech Switch    -->
+                <a id="vo-device-1" href="#" class="modal-switch item-switch" aria-label="Text-To-Speech Switch">
+                    <i aria-hidden="true" class="fa fa-volume-up text-to-speech-icon" title="Text-to-Speech Icon"></i>
+                </a>
             </h4>
 
             <!--     VR Headset Description     -->
